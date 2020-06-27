@@ -1,0 +1,1664 @@
+[2020-06-23 21:15:14 -0500] [46544] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1037303b0>
+  on_reload: <function OnReload.on_reload at 0x1037304d0>
+  when_ready: <function WhenReady.when_ready at 0x1037305f0>
+  pre_fork: <function Prefork.pre_fork at 0x103730710>
+  post_fork: <function Postfork.post_fork at 0x103730830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103730950>
+  worker_int: <function WorkerInt.worker_int at 0x103730a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x103730b90>
+  pre_exec: <function PreExec.pre_exec at 0x103730cb0>
+  pre_request: <function PreRequest.pre_request at 0x103730dd0>
+  post_request: <function PostRequest.post_request at 0x103730e60>
+  child_exit: <function ChildExit.child_exit at 0x103730f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10374c0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10374c200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x1037facb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-23 21:15:14 -0500] [46544] [INFO] Starting gunicorn 19.9.0
+[2020-06-23 21:15:14 -0500] [46544] [DEBUG] Arbiter booted
+[2020-06-23 21:15:14 -0500] [46544] [INFO] Listening at: http://0.0.0.0:22362 (46544)
+[2020-06-23 21:15:14 -0500] [46544] [INFO] Using worker: sync
+[2020-06-23 21:15:14 -0500] [46547] [INFO] Booting worker with pid: 46547
+[2020-06-23 21:15:14 -0500] [46548] [INFO] Booting worker with pid: 46548
+[2020-06-23 21:15:14 -0500] [46549] [INFO] Booting worker with pid: 46549
+[2020-06-23 21:15:14 -0500] [46550] [INFO] Booting worker with pid: 46550
+[2020-06-23 21:15:14 -0500] [46551] [INFO] Booting worker with pid: 46551
+[2020-06-23 21:15:14 -0500] [46552] [INFO] Booting worker with pid: 46552
+[2020-06-23 21:15:15 -0500] [46553] [INFO] Booting worker with pid: 46553
+[2020-06-23 21:15:15 -0500] [46554] [INFO] Booting worker with pid: 46554
+[2020-06-23 21:15:15 -0500] [46555] [INFO] Booting worker with pid: 46555
+[2020-06-23 21:15:15 -0500] [46544] [DEBUG] 9 workers
+2020-06-23 21:15:16,629 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:16,639 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-23 21:15:16 -0500] [46547] [DEBUG] Closing connection. 
+[2020-06-23 21:15:16 -0500] [46547] [DEBUG] Closing connection. 
+[2020-06-23 21:15:16 -0500] [46547] [DEBUG] GET /ad
+2020-06-23 21:15:16,860 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:16,902 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-23 21:15:16 -0500] [46547] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-23 21:15:16 -0500] [46547] [DEBUG] GET /static/images/university.png
+[2020-06-23 21:15:17 -0500] [46547] [DEBUG] GET /favicon.ico
+2020-06-23 21:15:17,262 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,271 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,403 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,412 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,469 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,477 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,485 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,491 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,494 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,504 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,538 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,545 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-23 21:15:17,546 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-23 21:15:17,551 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-23 21:15:25 -0500] [46555] [DEBUG] Closing connection. 
+[2020-06-23 21:15:40 -0500] [46551] [DEBUG] Closing connection. 
+[2020-06-23 21:16:09 -0500] [46544] [INFO] Handling signal: int
+[2020-06-23 21:16:09 -0500] [46547] [INFO] Worker exiting (pid: 46547)
+[2020-06-23 21:16:09 -0500] [46550] [INFO] Worker exiting (pid: 46550)
+[2020-06-23 21:16:09 -0500] [46554] [INFO] Worker exiting (pid: 46554)
+[2020-06-23 21:16:09 -0500] [46551] [INFO] Worker exiting (pid: 46551)
+[2020-06-23 21:16:09 -0500] [46549] [INFO] Worker exiting (pid: 46549)
+[2020-06-23 21:16:09 -0500] [46553] [INFO] Worker exiting (pid: 46553)
+[2020-06-23 21:16:09 -0500] [46555] [INFO] Worker exiting (pid: 46555)
+[2020-06-23 21:16:09 -0500] [46548] [INFO] Worker exiting (pid: 46548)
+[2020-06-23 21:16:09 -0500] [46552] [INFO] Worker exiting (pid: 46552)
+[2020-06-23 21:16:09 -0500] [46544] [INFO] Shutting down: Master
+[2020-06-24 17:07:26 -0500] [53308] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10ae9d3b0>
+  on_reload: <function OnReload.on_reload at 0x10ae9d4d0>
+  when_ready: <function WhenReady.when_ready at 0x10ae9d5f0>
+  pre_fork: <function Prefork.pre_fork at 0x10ae9d710>
+  post_fork: <function Postfork.post_fork at 0x10ae9d830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10ae9d950>
+  worker_int: <function WorkerInt.worker_int at 0x10ae9da70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10ae9db90>
+  pre_exec: <function PreExec.pre_exec at 0x10ae9dcb0>
+  pre_request: <function PreRequest.pre_request at 0x10ae9ddd0>
+  post_request: <function PostRequest.post_request at 0x10ae9de60>
+  child_exit: <function ChildExit.child_exit at 0x10ae9df80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10aeb90e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10aeb9200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x10af67cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-24 17:07:26 -0500] [53308] [INFO] Starting gunicorn 19.9.0
+[2020-06-24 17:07:26 -0500] [53308] [DEBUG] Arbiter booted
+[2020-06-24 17:07:26 -0500] [53308] [INFO] Listening at: http://0.0.0.0:22362 (53308)
+[2020-06-24 17:07:26 -0500] [53308] [INFO] Using worker: sync
+[2020-06-24 17:07:26 -0500] [53311] [INFO] Booting worker with pid: 53311
+[2020-06-24 17:07:26 -0500] [53312] [INFO] Booting worker with pid: 53312
+[2020-06-24 17:07:27 -0500] [53313] [INFO] Booting worker with pid: 53313
+[2020-06-24 17:07:27 -0500] [53314] [INFO] Booting worker with pid: 53314
+[2020-06-24 17:07:27 -0500] [53315] [INFO] Booting worker with pid: 53315
+[2020-06-24 17:07:27 -0500] [53316] [INFO] Booting worker with pid: 53316
+[2020-06-24 17:07:27 -0500] [53317] [INFO] Booting worker with pid: 53317
+[2020-06-24 17:07:27 -0500] [53318] [INFO] Booting worker with pid: 53318
+[2020-06-24 17:07:27 -0500] [53319] [INFO] Booting worker with pid: 53319
+[2020-06-24 17:07:27 -0500] [53308] [DEBUG] 9 workers
+2020-06-24 17:07:28,947 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:28,956 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:07:28 -0500] [53311] [DEBUG] Closing connection. 
+[2020-06-24 17:07:28 -0500] [53311] [DEBUG] GET /ad
+2020-06-24 17:07:28,998 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,025 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:07:29 -0500] [53311] [DEBUG] Closing connection. 
+[2020-06-24 17:07:29 -0500] [53312] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-24 17:07:29 -0500] [53312] [DEBUG] GET /static/images/university.png
+[2020-06-24 17:07:29 -0500] [53311] [DEBUG] GET /favicon.ico
+2020-06-24 17:07:29,462 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,471 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,545 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,553 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,675 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,689 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,693 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,706 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,706 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,718 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,734 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,741 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:07:29,742 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:07:29,750 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:08:13 -0500] [53315] [DEBUG] Closing connection. 
+[2020-06-24 17:08:21 -0500] [53316] [DEBUG] Closing connection. 
+[2020-06-24 17:08:24 -0500] [53318] [DEBUG] Closing connection. 
+[2020-06-24 17:08:35 -0500] [53308] [INFO] Handling signal: int
+[2020-06-24 17:08:36 -0500] [53311] [INFO] Worker exiting (pid: 53311)
+[2020-06-24 17:08:36 -0500] [53315] [INFO] Worker exiting (pid: 53315)
+[2020-06-24 17:08:36 -0500] [53314] [INFO] Worker exiting (pid: 53314)
+[2020-06-24 17:08:36 -0500] [53318] [INFO] Worker exiting (pid: 53318)
+[2020-06-24 17:08:36 -0500] [53317] [INFO] Worker exiting (pid: 53317)
+[2020-06-24 17:08:36 -0500] [53316] [INFO] Worker exiting (pid: 53316)
+[2020-06-24 17:08:36 -0500] [53319] [INFO] Worker exiting (pid: 53319)
+[2020-06-24 17:08:36 -0500] [53313] [INFO] Worker exiting (pid: 53313)
+[2020-06-24 17:08:36 -0500] [53312] [INFO] Worker exiting (pid: 53312)
+[2020-06-24 17:08:36 -0500] [53308] [INFO] Shutting down: Master
+[2020-06-24 17:08:46 -0500] [53398] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10985e3b0>
+  on_reload: <function OnReload.on_reload at 0x10985e4d0>
+  when_ready: <function WhenReady.when_ready at 0x10985e5f0>
+  pre_fork: <function Prefork.pre_fork at 0x10985e710>
+  post_fork: <function Postfork.post_fork at 0x10985e830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10985e950>
+  worker_int: <function WorkerInt.worker_int at 0x10985ea70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10985eb90>
+  pre_exec: <function PreExec.pre_exec at 0x10985ecb0>
+  pre_request: <function PreRequest.pre_request at 0x10985edd0>
+  post_request: <function PostRequest.post_request at 0x10985ee60>
+  child_exit: <function ChildExit.child_exit at 0x10985ef80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10987a0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10987a200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x109928cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-24 17:08:46 -0500] [53398] [INFO] Starting gunicorn 19.9.0
+[2020-06-24 17:08:46 -0500] [53398] [DEBUG] Arbiter booted
+[2020-06-24 17:08:46 -0500] [53398] [INFO] Listening at: http://0.0.0.0:22362 (53398)
+[2020-06-24 17:08:46 -0500] [53398] [INFO] Using worker: sync
+[2020-06-24 17:08:46 -0500] [53401] [INFO] Booting worker with pid: 53401
+[2020-06-24 17:08:46 -0500] [53402] [INFO] Booting worker with pid: 53402
+[2020-06-24 17:08:46 -0500] [53403] [INFO] Booting worker with pid: 53403
+[2020-06-24 17:08:46 -0500] [53404] [INFO] Booting worker with pid: 53404
+[2020-06-24 17:08:46 -0500] [53405] [INFO] Booting worker with pid: 53405
+[2020-06-24 17:08:46 -0500] [53406] [INFO] Booting worker with pid: 53406
+[2020-06-24 17:08:46 -0500] [53407] [INFO] Booting worker with pid: 53407
+[2020-06-24 17:08:46 -0500] [53408] [INFO] Booting worker with pid: 53408
+[2020-06-24 17:08:46 -0500] [53409] [INFO] Booting worker with pid: 53409
+[2020-06-24 17:08:46 -0500] [53398] [DEBUG] 9 workers
+2020-06-24 17:08:47,696 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:47,707 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:08:47 -0500] [53401] [DEBUG] Closing connection. 
+2020-06-24 17:08:48,034 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,042 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,060 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,080 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,249 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,253 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,262 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,265 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,364 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,369 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,372 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,377 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,378 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,385 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:08:48,386 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:08:48,392 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:08:50 -0500] [53409] [DEBUG] GET /ad
+[2020-06-24 17:08:50 -0500] [53401] [DEBUG] Closing connection. 
+[2020-06-24 17:08:50 -0500] [53407] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-24 17:08:50 -0500] [53408] [DEBUG] GET /static/images/university.png
+[2020-06-24 17:09:04 -0500] [53406] [DEBUG] Closing connection. 
+[2020-06-24 17:09:06 -0500] [53408] [DEBUG] Closing connection. 
+[2020-06-24 17:09:06 -0500] [53402] [DEBUG] Closing connection. 
+[2020-06-24 17:09:06 -0500] [53408] [DEBUG] GET /ppid
+[2020-06-24 17:09:06 -0500] [53405] [INFO] Parent changed, shutting down: <Worker 53405>
+[2020-06-24 17:09:06 -0500] [53403] [INFO] Parent changed, shutting down: <Worker 53403>
+[2020-06-24 17:09:06 -0500] [53408] [DEBUG] Closing connection. 
+[2020-06-24 17:09:06 -0500] [53404] [INFO] Parent changed, shutting down: <Worker 53404>
+[2020-06-24 17:09:06 -0500] [53403] [INFO] Worker exiting (pid: 53403)
+[2020-06-24 17:09:06 -0500] [53405] [INFO] Worker exiting (pid: 53405)
+[2020-06-24 17:09:06 -0500] [53408] [INFO] Parent changed, shutting down: <Worker 53408>
+[2020-06-24 17:09:06 -0500] [53408] [INFO] Worker exiting (pid: 53408)
+[2020-06-24 17:09:06 -0500] [53404] [INFO] Worker exiting (pid: 53404)
+[2020-06-24 17:09:06 -0500] [53409] [INFO] Parent changed, shutting down: <Worker 53409>
+[2020-06-24 17:09:06 -0500] [53407] [INFO] Parent changed, shutting down: <Worker 53407>
+[2020-06-24 17:09:06 -0500] [53402] [DEBUG] Closing connection. 
+[2020-06-24 17:09:06 -0500] [53407] [INFO] Worker exiting (pid: 53407)
+[2020-06-24 17:09:06 -0500] [53409] [INFO] Worker exiting (pid: 53409)
+[2020-06-24 17:09:06 -0500] [53402] [INFO] Parent changed, shutting down: <Worker 53402>
+[2020-06-24 17:09:06 -0500] [53402] [INFO] Worker exiting (pid: 53402)
+[2020-06-24 17:09:07 -0500] [53406] [INFO] Parent changed, shutting down: <Worker 53406>
+[2020-06-24 17:09:07 -0500] [53401] [DEBUG] Closing connection. 
+[2020-06-24 17:09:07 -0500] [53406] [INFO] Worker exiting (pid: 53406)
+[2020-06-24 17:09:07 -0500] [53401] [INFO] Parent changed, shutting down: <Worker 53401>
+[2020-06-24 17:09:07 -0500] [53401] [INFO] Worker exiting (pid: 53401)
+[2020-06-24 17:15:02 -0500] [53508] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1035453b0>
+  on_reload: <function OnReload.on_reload at 0x1035454d0>
+  when_ready: <function WhenReady.when_ready at 0x1035455f0>
+  pre_fork: <function Prefork.pre_fork at 0x103545710>
+  post_fork: <function Postfork.post_fork at 0x103545830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103545950>
+  worker_int: <function WorkerInt.worker_int at 0x103545a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x103545b90>
+  pre_exec: <function PreExec.pre_exec at 0x103545cb0>
+  pre_request: <function PreRequest.pre_request at 0x103545dd0>
+  post_request: <function PostRequest.post_request at 0x103545e60>
+  child_exit: <function ChildExit.child_exit at 0x103545f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1035610e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x103561200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x10360fcb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-24 17:15:02 -0500] [53508] [INFO] Starting gunicorn 19.9.0
+[2020-06-24 17:15:02 -0500] [53508] [DEBUG] Arbiter booted
+[2020-06-24 17:15:02 -0500] [53508] [INFO] Listening at: http://0.0.0.0:22362 (53508)
+[2020-06-24 17:15:02 -0500] [53508] [INFO] Using worker: sync
+[2020-06-24 17:15:02 -0500] [53511] [INFO] Booting worker with pid: 53511
+[2020-06-24 17:15:02 -0500] [53512] [INFO] Booting worker with pid: 53512
+[2020-06-24 17:15:02 -0500] [53513] [INFO] Booting worker with pid: 53513
+[2020-06-24 17:15:02 -0500] [53514] [INFO] Booting worker with pid: 53514
+[2020-06-24 17:15:02 -0500] [53515] [INFO] Booting worker with pid: 53515
+[2020-06-24 17:15:02 -0500] [53516] [INFO] Booting worker with pid: 53516
+[2020-06-24 17:15:02 -0500] [53517] [INFO] Booting worker with pid: 53517
+[2020-06-24 17:15:02 -0500] [53518] [INFO] Booting worker with pid: 53518
+[2020-06-24 17:15:02 -0500] [53519] [INFO] Booting worker with pid: 53519
+[2020-06-24 17:15:03 -0500] [53508] [DEBUG] 9 workers
+2020-06-24 17:15:04,218 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,238 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:15:04 -0500] [53511] [DEBUG] Closing connection. 
+2020-06-24 17:15:04,354 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,373 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,565 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,582 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,671 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,681 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,696 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,710 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,762 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,767 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,773 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,773 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,774 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,781 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 17:15:04,788 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:15:04,793 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:15:12 -0500] [53519] [DEBUG] GET /ad
+[2020-06-24 17:15:13 -0500] [53519] [DEBUG] GET /static/images/university.png
+[2020-06-24 17:15:13 -0500] [53516] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-24 17:15:13 -0500] [53517] [DEBUG] GET /favicon.ico
+[2020-06-24 17:15:25 -0500] [53515] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-24 17:17:31 -0500] [53516] [DEBUG] GET /ad
+[2020-06-24 17:17:31 -0500] [53517] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-24 17:17:31 -0500] [53511] [DEBUG] GET /static/images/university.png
+[2020-06-24 17:17:31 -0500] [53516] [DEBUG] GET /favicon.ico
+[2020-06-24 17:17:47 -0500] [53516] [DEBUG] GET /exp
+2020-06-24 17:17:47,942 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+2020-06-24 17:17:47,948 given Counter({(0, 0): 0}) chose (0, 0)
+[2020-06-24 17:17:47 -0500] [53511] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-24 17:17:47 -0500] [53514] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-24 17:17:48 -0500] [53511] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-24 17:17:48 -0500] [53513] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-24 17:17:48 -0500] [53514] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-24 17:17:48 -0500] [53519] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-24 17:17:48 -0500] [53517] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-24 17:17:48 -0500] [53512] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-24 17:17:48 -0500] [53511] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-24 17:17:48 -0500] [53519] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-24 17:17:48 -0500] [53514] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-24 17:17:48 -0500] [53515] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-24 17:43:30 -0500] [53514] [DEBUG] GET /exp
+2020-06-24 17:43:30,415 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-24 17:43:30 -0500] [53519] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-24 17:43:30 -0500] [53514] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-24 17:43:30 -0500] [53514] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-24 17:43:30 -0500] [53513] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-24 17:43:30 -0500] [53514] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-24 17:43:30 -0500] [53516] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-24 17:43:30 -0500] [53513] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-24 17:43:30 -0500] [53519] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-24 17:43:30 -0500] [53518] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-24 17:43:30 -0500] [53513] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-24 17:43:30 -0500] [53519] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-24 17:43:30 -0500] [53515] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-24 17:44:00 -0500] [53518] [DEBUG] GET /exp
+2020-06-24 17:44:00,892 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-24 17:44:00 -0500] [53515] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-24 17:44:00 -0500] [53515] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-24 17:44:01 -0500] [53515] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-24 17:44:01 -0500] [53515] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-24 17:44:01 -0500] [53515] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-24 17:44:01 -0500] [53513] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-24 17:44:01 -0500] [53514] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-24 17:44:01 -0500] [53516] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-24 17:44:01 -0500] [53511] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-24 17:44:01 -0500] [53513] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-24 17:44:01 -0500] [53516] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-24 17:44:01 -0500] [53513] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-24 17:44:07 -0500] [53519] [DEBUG] GET /exp
+2020-06-24 17:44:07,919 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-24 17:44:38 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53511)
+[2020-06-24 17:44:38 -0500] [53511] [INFO] Worker exiting (pid: 53511)
+[2020-06-24 17:44:38 -0500] [53763] [INFO] Booting worker with pid: 53763
+2020-06-24 17:44:39,953 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 17:44:39,967 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 17:48:16 -0500] [53514] [DEBUG] GET /exp
+2020-06-24 17:48:16,128 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-24 17:48:16 -0500] [53516] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-24 17:48:16 -0500] [53514] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-24 17:48:16 -0500] [53514] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-24 17:48:16 -0500] [53514] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-24 17:48:16 -0500] [53516] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-24 17:48:16 -0500] [53514] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-24 17:48:16 -0500] [53516] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-24 17:48:16 -0500] [53518] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-24 17:48:16 -0500] [53518] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-24 17:48:16 -0500] [53517] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-24 17:48:16 -0500] [53512] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-24 17:48:16 -0500] [53518] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53512)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53513)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53514)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53515)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53516)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53517)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53518)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53519)
+[2020-06-24 18:37:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53763)
+[2020-06-24 18:37:40 -0500] [53512] [INFO] Worker exiting (pid: 53512)
+[2020-06-24 18:37:40 -0500] [53513] [INFO] Worker exiting (pid: 53513)
+[2020-06-24 18:37:40 -0500] [53514] [INFO] Worker exiting (pid: 53514)
+[2020-06-24 18:37:40 -0500] [53515] [INFO] Worker exiting (pid: 53515)
+[2020-06-24 18:37:40 -0500] [53516] [INFO] Worker exiting (pid: 53516)
+[2020-06-24 18:37:40 -0500] [53517] [INFO] Worker exiting (pid: 53517)
+[2020-06-24 18:37:40 -0500] [53518] [INFO] Worker exiting (pid: 53518)
+[2020-06-24 18:37:40 -0500] [53519] [INFO] Worker exiting (pid: 53519)
+[2020-06-24 18:37:40 -0500] [53763] [INFO] Worker exiting (pid: 53763)
+[2020-06-24 18:37:40 -0500] [53968] [INFO] Booting worker with pid: 53968
+[2020-06-24 18:37:40 -0500] [53508] [DEBUG] 1 workers
+[2020-06-24 18:37:40 -0500] [53969] [INFO] Booting worker with pid: 53969
+[2020-06-24 18:37:40 -0500] [53970] [INFO] Booting worker with pid: 53970
+[2020-06-24 18:37:40 -0500] [53971] [INFO] Booting worker with pid: 53971
+[2020-06-24 18:37:40 -0500] [53972] [INFO] Booting worker with pid: 53972
+[2020-06-24 18:37:40 -0500] [53973] [INFO] Booting worker with pid: 53973
+[2020-06-24 18:37:40 -0500] [53974] [INFO] Booting worker with pid: 53974
+[2020-06-24 18:37:40 -0500] [53975] [INFO] Booting worker with pid: 53975
+[2020-06-24 18:37:40 -0500] [53976] [INFO] Booting worker with pid: 53976
+[2020-06-24 18:37:40 -0500] [53508] [DEBUG] 9 workers
+2020-06-24 18:37:42,988 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:42,997 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,051 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,059 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,062 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,069 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,071 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,074 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,081 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,084 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,117 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,130 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,145 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,146 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,148 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:37:43,153 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,154 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:37:43,156 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53968)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53969)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53970)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53971)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53972)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53973)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53974)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53975)
+[2020-06-24 18:42:15 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53976)
+[2020-06-24 18:42:15 -0500] [53968] [INFO] Worker exiting (pid: 53968)
+[2020-06-24 18:42:15 -0500] [53970] [INFO] Worker exiting (pid: 53970)
+[2020-06-24 18:42:15 -0500] [53971] [INFO] Worker exiting (pid: 53971)
+[2020-06-24 18:42:15 -0500] [53972] [INFO] Worker exiting (pid: 53972)
+[2020-06-24 18:42:15 -0500] [53973] [INFO] Worker exiting (pid: 53973)
+[2020-06-24 18:42:15 -0500] [53974] [INFO] Worker exiting (pid: 53974)
+[2020-06-24 18:42:15 -0500] [53975] [INFO] Worker exiting (pid: 53975)
+[2020-06-24 18:42:15 -0500] [53969] [INFO] Worker exiting (pid: 53969)
+[2020-06-24 18:42:15 -0500] [53976] [INFO] Worker exiting (pid: 53976)
+[2020-06-24 18:42:15 -0500] [53986] [INFO] Booting worker with pid: 53986
+[2020-06-24 18:42:15 -0500] [53508] [DEBUG] 6 workers
+[2020-06-24 18:42:15 -0500] [53987] [INFO] Booting worker with pid: 53987
+[2020-06-24 18:42:15 -0500] [53988] [INFO] Booting worker with pid: 53988
+[2020-06-24 18:42:15 -0500] [53989] [INFO] Booting worker with pid: 53989
+[2020-06-24 18:42:15 -0500] [53990] [INFO] Booting worker with pid: 53990
+[2020-06-24 18:42:15 -0500] [53508] [DEBUG] 5 workers
+[2020-06-24 18:42:15 -0500] [53991] [INFO] Booting worker with pid: 53991
+[2020-06-24 18:42:15 -0500] [53992] [INFO] Booting worker with pid: 53992
+[2020-06-24 18:42:15 -0500] [53993] [INFO] Booting worker with pid: 53993
+[2020-06-24 18:42:15 -0500] [53994] [INFO] Booting worker with pid: 53994
+[2020-06-24 18:42:15 -0500] [53508] [DEBUG] 9 workers
+2020-06-24 18:42:18,610 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,629 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,649 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,655 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,671 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,664 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,684 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,715 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,715 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,719 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,728 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,732 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,732 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,740 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,760 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,777 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 18:42:18,791 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 18:42:18,811 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53986)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53987)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53988)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53989)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53990)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53991)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53992)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53993)
+[2020-06-24 19:56:46 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:53994)
+[2020-06-24 19:56:46 -0500] [53986] [INFO] Worker exiting (pid: 53986)
+[2020-06-24 19:56:46 -0500] [53987] [INFO] Worker exiting (pid: 53987)
+[2020-06-24 19:56:46 -0500] [53988] [INFO] Worker exiting (pid: 53988)
+[2020-06-24 19:56:46 -0500] [53989] [INFO] Worker exiting (pid: 53989)
+[2020-06-24 19:56:46 -0500] [53990] [INFO] Worker exiting (pid: 53990)
+[2020-06-24 19:56:46 -0500] [53991] [INFO] Worker exiting (pid: 53991)
+[2020-06-24 19:56:46 -0500] [53993] [INFO] Worker exiting (pid: 53993)
+[2020-06-24 19:56:46 -0500] [53994] [INFO] Worker exiting (pid: 53994)
+[2020-06-24 19:56:46 -0500] [53992] [INFO] Worker exiting (pid: 53992)
+[2020-06-24 19:56:46 -0500] [54231] [INFO] Booting worker with pid: 54231
+[2020-06-24 19:56:46 -0500] [53508] [DEBUG] 1 workers
+[2020-06-24 19:56:46 -0500] [54232] [INFO] Booting worker with pid: 54232
+[2020-06-24 19:56:46 -0500] [54233] [INFO] Booting worker with pid: 54233
+[2020-06-24 19:56:46 -0500] [54234] [INFO] Booting worker with pid: 54234
+[2020-06-24 19:56:46 -0500] [54235] [INFO] Booting worker with pid: 54235
+[2020-06-24 19:56:46 -0500] [54237] [INFO] Booting worker with pid: 54237
+[2020-06-24 19:56:46 -0500] [54239] [INFO] Booting worker with pid: 54239
+[2020-06-24 19:56:46 -0500] [54240] [INFO] Booting worker with pid: 54240
+[2020-06-24 19:56:46 -0500] [54241] [INFO] Booting worker with pid: 54241
+[2020-06-24 19:56:46 -0500] [53508] [DEBUG] 9 workers
+2020-06-24 19:56:49,114 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,123 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,251 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,278 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,305 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,321 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,328 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,335 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,376 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,382 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,393 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,404 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,415 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,425 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,448 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,457 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 19:56:49,464 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 19:56:49,471 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54231)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54232)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54233)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54234)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54235)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54237)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54239)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54240)
+[2020-06-24 23:25:21 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54241)
+[2020-06-24 23:25:21 -0500] [54231] [INFO] Worker exiting (pid: 54231)
+[2020-06-24 23:25:21 -0500] [54233] [INFO] Worker exiting (pid: 54233)
+[2020-06-24 23:25:21 -0500] [54234] [INFO] Worker exiting (pid: 54234)
+[2020-06-24 23:25:21 -0500] [54235] [INFO] Worker exiting (pid: 54235)
+[2020-06-24 23:25:21 -0500] [54237] [INFO] Worker exiting (pid: 54237)
+[2020-06-24 23:25:21 -0500] [54240] [INFO] Worker exiting (pid: 54240)
+[2020-06-24 23:25:21 -0500] [54241] [INFO] Worker exiting (pid: 54241)
+[2020-06-24 23:25:21 -0500] [54232] [INFO] Worker exiting (pid: 54232)
+[2020-06-24 23:25:21 -0500] [54239] [INFO] Worker exiting (pid: 54239)
+[2020-06-24 23:25:21 -0500] [54250] [INFO] Booting worker with pid: 54250
+[2020-06-24 23:25:21 -0500] [53508] [DEBUG] 1 workers
+[2020-06-24 23:25:21 -0500] [54251] [INFO] Booting worker with pid: 54251
+[2020-06-24 23:25:21 -0500] [54252] [INFO] Booting worker with pid: 54252
+[2020-06-24 23:25:21 -0500] [54253] [INFO] Booting worker with pid: 54253
+[2020-06-24 23:25:21 -0500] [54256] [INFO] Booting worker with pid: 54256
+[2020-06-24 23:25:21 -0500] [54257] [INFO] Booting worker with pid: 54257
+[2020-06-24 23:25:22 -0500] [54258] [INFO] Booting worker with pid: 54258
+[2020-06-24 23:25:22 -0500] [54261] [INFO] Booting worker with pid: 54261
+[2020-06-24 23:25:22 -0500] [54262] [INFO] Booting worker with pid: 54262
+[2020-06-24 23:25:22 -0500] [53508] [DEBUG] 9 workers
+2020-06-24 23:25:25,080 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,093 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,106 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,117 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,129 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,134 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,227 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,245 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,262 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,273 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,308 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,316 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,318 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,319 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,325 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,327 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-24 23:25:25,336 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-24 23:25:25,350 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54250)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54251)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54252)
+[2020-06-25 01:47:44 -0500] [54250] [INFO] Worker exiting (pid: 54250)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54253)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54256)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54257)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54258)
+[2020-06-25 01:47:44 -0500] [54251] [INFO] Worker exiting (pid: 54251)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54261)
+[2020-06-25 01:47:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54262)
+[2020-06-25 01:47:44 -0500] [54253] [INFO] Worker exiting (pid: 54253)
+[2020-06-25 01:47:44 -0500] [54256] [INFO] Worker exiting (pid: 54256)
+[2020-06-25 01:47:44 -0500] [54258] [INFO] Worker exiting (pid: 54258)
+[2020-06-25 01:47:44 -0500] [54257] [INFO] Worker exiting (pid: 54257)
+[2020-06-25 01:47:44 -0500] [54252] [INFO] Worker exiting (pid: 54252)
+[2020-06-25 01:47:44 -0500] [54262] [INFO] Worker exiting (pid: 54262)
+[2020-06-25 01:47:44 -0500] [54261] [INFO] Worker exiting (pid: 54261)
+[2020-06-25 01:47:44 -0500] [53508] [DEBUG] 8 workers
+[2020-06-25 01:47:44 -0500] [54774] [INFO] Booting worker with pid: 54774
+[2020-06-25 01:47:44 -0500] [54775] [INFO] Booting worker with pid: 54775
+[2020-06-25 01:47:44 -0500] [53508] [DEBUG] 2 workers
+[2020-06-25 01:47:44 -0500] [54776] [INFO] Booting worker with pid: 54776
+[2020-06-25 01:47:44 -0500] [54777] [INFO] Booting worker with pid: 54777
+[2020-06-25 01:47:44 -0500] [54778] [INFO] Booting worker with pid: 54778
+[2020-06-25 01:47:44 -0500] [54779] [INFO] Booting worker with pid: 54779
+[2020-06-25 01:47:44 -0500] [54782] [INFO] Booting worker with pid: 54782
+[2020-06-25 01:47:44 -0500] [54783] [INFO] Booting worker with pid: 54783
+[2020-06-25 01:47:44 -0500] [54784] [INFO] Booting worker with pid: 54784
+[2020-06-25 01:47:44 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 01:47:47,283 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,283 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,293 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,293 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,299 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,319 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,326 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,335 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,421 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,483 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,519 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,526 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,529 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,531 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,537 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,539 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 01:47:47,565 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 01:47:47,572 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54774)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54775)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54776)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54777)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54778)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54779)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54782)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54783)
+[2020-06-25 03:27:40 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54784)
+[2020-06-25 03:27:40 -0500] [54778] [INFO] Worker exiting (pid: 54778)
+[2020-06-25 03:27:40 -0500] [54779] [INFO] Worker exiting (pid: 54779)
+[2020-06-25 03:27:40 -0500] [54782] [INFO] Worker exiting (pid: 54782)
+[2020-06-25 03:27:40 -0500] [54784] [INFO] Worker exiting (pid: 54784)
+[2020-06-25 03:27:40 -0500] [54774] [INFO] Worker exiting (pid: 54774)
+[2020-06-25 03:27:40 -0500] [54776] [INFO] Worker exiting (pid: 54776)
+[2020-06-25 03:27:40 -0500] [54775] [INFO] Worker exiting (pid: 54775)
+[2020-06-25 03:27:40 -0500] [54777] [INFO] Worker exiting (pid: 54777)
+[2020-06-25 03:27:40 -0500] [54783] [INFO] Worker exiting (pid: 54783)
+[2020-06-25 03:27:40 -0500] [54794] [INFO] Booting worker with pid: 54794
+[2020-06-25 03:27:40 -0500] [53508] [DEBUG] 2 workers
+[2020-06-25 03:27:40 -0500] [54795] [INFO] Booting worker with pid: 54795
+[2020-06-25 03:27:40 -0500] [54796] [INFO] Booting worker with pid: 54796
+[2020-06-25 03:27:40 -0500] [54797] [INFO] Booting worker with pid: 54797
+[2020-06-25 03:27:40 -0500] [54798] [INFO] Booting worker with pid: 54798
+[2020-06-25 03:27:40 -0500] [54799] [INFO] Booting worker with pid: 54799
+[2020-06-25 03:27:40 -0500] [54800] [INFO] Booting worker with pid: 54800
+[2020-06-25 03:27:40 -0500] [54801] [INFO] Booting worker with pid: 54801
+[2020-06-25 03:27:40 -0500] [54802] [INFO] Booting worker with pid: 54802
+[2020-06-25 03:27:40 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 03:27:44,000 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,012 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,024 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,030 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,092 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,106 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,106 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,115 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,118 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,126 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,131 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,140 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,147 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,151 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,156 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,157 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 03:27:44,160 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 03:27:44,165 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54794)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54795)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54796)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54797)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54798)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54799)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54800)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54801)
+[2020-06-25 10:15:03 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54802)
+[2020-06-25 10:15:03 -0500] [54802] [INFO] Worker exiting (pid: 54802)
+[2020-06-25 10:15:03 -0500] [54799] [INFO] Worker exiting (pid: 54799)
+[2020-06-25 10:15:03 -0500] [54795] [INFO] Worker exiting (pid: 54795)
+[2020-06-25 10:15:03 -0500] [54800] [INFO] Worker exiting (pid: 54800)
+[2020-06-25 10:15:03 -0500] [54794] [INFO] Worker exiting (pid: 54794)
+[2020-06-25 10:15:03 -0500] [54798] [INFO] Worker exiting (pid: 54798)
+[2020-06-25 10:15:03 -0500] [54797] [INFO] Worker exiting (pid: 54797)
+[2020-06-25 10:15:03 -0500] [54796] [INFO] Worker exiting (pid: 54796)
+[2020-06-25 10:15:03 -0500] [54801] [INFO] Worker exiting (pid: 54801)
+[2020-06-25 10:15:04 -0500] [54817] [INFO] Booting worker with pid: 54817
+[2020-06-25 10:15:05 -0500] [54818] [INFO] Booting worker with pid: 54818
+[2020-06-25 10:15:05 -0500] [54819] [INFO] Booting worker with pid: 54819
+[2020-06-25 10:15:05 -0500] [53508] [DEBUG] 3 workers
+[2020-06-25 10:15:05 -0500] [54820] [INFO] Booting worker with pid: 54820
+[2020-06-25 10:15:05 -0500] [54822] [INFO] Booting worker with pid: 54822
+[2020-06-25 10:15:05 -0500] [54823] [INFO] Booting worker with pid: 54823
+[2020-06-25 10:15:05 -0500] [54824] [INFO] Booting worker with pid: 54824
+[2020-06-25 10:15:05 -0500] [54825] [INFO] Booting worker with pid: 54825
+[2020-06-25 10:15:05 -0500] [54826] [INFO] Booting worker with pid: 54826
+[2020-06-25 10:15:05 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 10:15:11,238 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,238 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,253 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,253 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,285 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,297 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,298 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,299 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,305 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,314 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,314 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,315 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,324 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,326 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,333 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,318 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 10:15:11,341 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 10:15:11,347 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54817)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54818)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54819)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54820)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54822)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54823)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54824)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54825)
+[2020-06-25 11:33:12 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54826)
+[2020-06-25 11:33:12 -0500] [54818] [INFO] Worker exiting (pid: 54818)
+[2020-06-25 11:33:12 -0500] [54817] [INFO] Worker exiting (pid: 54817)
+[2020-06-25 11:33:12 -0500] [54819] [INFO] Worker exiting (pid: 54819)
+[2020-06-25 11:33:12 -0500] [54826] [INFO] Worker exiting (pid: 54826)
+[2020-06-25 11:33:12 -0500] [54820] [INFO] Worker exiting (pid: 54820)
+[2020-06-25 11:33:12 -0500] [54823] [INFO] Worker exiting (pid: 54823)
+[2020-06-25 11:33:12 -0500] [54824] [INFO] Worker exiting (pid: 54824)
+[2020-06-25 11:33:12 -0500] [54825] [INFO] Worker exiting (pid: 54825)
+[2020-06-25 11:33:12 -0500] [54822] [INFO] Worker exiting (pid: 54822)
+[2020-06-25 11:33:12 -0500] [54861] [INFO] Booting worker with pid: 54861
+[2020-06-25 11:33:12 -0500] [53508] [DEBUG] 1 workers
+[2020-06-25 11:33:12 -0500] [54862] [INFO] Booting worker with pid: 54862
+[2020-06-25 11:33:12 -0500] [54863] [INFO] Booting worker with pid: 54863
+[2020-06-25 11:33:12 -0500] [54866] [INFO] Booting worker with pid: 54866
+[2020-06-25 11:33:12 -0500] [54867] [INFO] Booting worker with pid: 54867
+[2020-06-25 11:33:13 -0500] [54868] [INFO] Booting worker with pid: 54868
+[2020-06-25 11:33:13 -0500] [54869] [INFO] Booting worker with pid: 54869
+[2020-06-25 11:33:13 -0500] [54870] [INFO] Booting worker with pid: 54870
+[2020-06-25 11:33:13 -0500] [54871] [INFO] Booting worker with pid: 54871
+[2020-06-25 11:33:13 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 11:33:16,430 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,453 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,475 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,489 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,498 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,508 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,511 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,551 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,555 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,594 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,673 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,683 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,708 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,717 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,722 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,732 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 11:33:16,746 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 11:33:16,760 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54861)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54862)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54863)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54866)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54867)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54868)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54869)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54870)
+[2020-06-25 13:53:28 -0500] [54861] [INFO] Worker exiting (pid: 54861)
+[2020-06-25 13:53:28 -0500] [54863] [INFO] Worker exiting (pid: 54863)
+[2020-06-25 13:53:28 -0500] [54862] [INFO] Worker exiting (pid: 54862)
+[2020-06-25 13:53:28 -0500] [54866] [INFO] Worker exiting (pid: 54866)
+[2020-06-25 13:53:28 -0500] [54867] [INFO] Worker exiting (pid: 54867)
+[2020-06-25 13:53:28 -0500] [54868] [INFO] Worker exiting (pid: 54868)
+[2020-06-25 13:53:28 -0500] [54869] [INFO] Worker exiting (pid: 54869)
+[2020-06-25 13:53:28 -0500] [54870] [INFO] Worker exiting (pid: 54870)
+[2020-06-25 13:53:28 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:54871)
+[2020-06-25 13:53:28 -0500] [54871] [INFO] Worker exiting (pid: 54871)
+[2020-06-25 13:53:28 -0500] [55673] [INFO] Booting worker with pid: 55673
+[2020-06-25 13:53:28 -0500] [53508] [DEBUG] 1 workers
+[2020-06-25 13:53:28 -0500] [55674] [INFO] Booting worker with pid: 55674
+[2020-06-25 13:53:28 -0500] [55675] [INFO] Booting worker with pid: 55675
+[2020-06-25 13:53:28 -0500] [55676] [INFO] Booting worker with pid: 55676
+[2020-06-25 13:53:28 -0500] [55677] [INFO] Booting worker with pid: 55677
+[2020-06-25 13:53:28 -0500] [55680] [INFO] Booting worker with pid: 55680
+[2020-06-25 13:53:28 -0500] [55681] [INFO] Booting worker with pid: 55681
+[2020-06-25 13:53:28 -0500] [55682] [INFO] Booting worker with pid: 55682
+[2020-06-25 13:53:28 -0500] [55683] [INFO] Booting worker with pid: 55683
+[2020-06-25 13:53:28 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 13:53:30,605 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:30,663 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:30,772 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:30,794 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:30,914 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:30,922 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:30,925 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:30,938 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:30,964 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:30,973 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:31,001 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:31,004 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:31,010 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:31,012 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:31,018 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:31,026 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:53:31,033 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:53:31,039 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55673)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55674)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55675)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55676)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55677)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55680)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55681)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55682)
+[2020-06-25 13:58:44 -0500] [53508] [CRITICAL] WORKER TIMEOUT (pid:55683)
+[2020-06-25 13:58:44 -0500] [55673] [INFO] Worker exiting (pid: 55673)
+[2020-06-25 13:58:44 -0500] [55676] [INFO] Worker exiting (pid: 55676)
+[2020-06-25 13:58:44 -0500] [55674] [INFO] Worker exiting (pid: 55674)
+[2020-06-25 13:58:44 -0500] [55680] [INFO] Worker exiting (pid: 55680)
+[2020-06-25 13:58:44 -0500] [55681] [INFO] Worker exiting (pid: 55681)
+[2020-06-25 13:58:44 -0500] [55682] [INFO] Worker exiting (pid: 55682)
+[2020-06-25 13:58:44 -0500] [55683] [INFO] Worker exiting (pid: 55683)
+[2020-06-25 13:58:44 -0500] [55675] [INFO] Worker exiting (pid: 55675)
+[2020-06-25 13:58:44 -0500] [55677] [INFO] Worker exiting (pid: 55677)
+[2020-06-25 13:58:44 -0500] [55690] [INFO] Booting worker with pid: 55690
+[2020-06-25 13:58:44 -0500] [53508] [DEBUG] 1 workers
+[2020-06-25 13:58:44 -0500] [55691] [INFO] Booting worker with pid: 55691
+[2020-06-25 13:58:44 -0500] [55692] [INFO] Booting worker with pid: 55692
+[2020-06-25 13:58:44 -0500] [55693] [INFO] Booting worker with pid: 55693
+[2020-06-25 13:58:44 -0500] [55694] [INFO] Booting worker with pid: 55694
+[2020-06-25 13:58:44 -0500] [55695] [INFO] Booting worker with pid: 55695
+[2020-06-25 13:58:44 -0500] [55696] [INFO] Booting worker with pid: 55696
+[2020-06-25 13:58:44 -0500] [55697] [INFO] Booting worker with pid: 55697
+[2020-06-25 13:58:44 -0500] [55699] [INFO] Booting worker with pid: 55699
+[2020-06-25 13:58:44 -0500] [53508] [DEBUG] 9 workers
+2020-06-25 13:58:47,661 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,672 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,703 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,705 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,735 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,743 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,757 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,765 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,775 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,797 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,805 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,814 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,828 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,858 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,863 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,867 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 13:58:47,870 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 13:58:47,878 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 16:31:37 -0500] [55696] [DEBUG] Closing connection. 
+[2020-06-25 16:31:38 -0500] [55690] [DEBUG] Closing connection. 
+[2020-06-25 16:31:38 -0500] [55699] [DEBUG] Closing connection. 
+[2020-06-25 16:31:38 -0500] [55699] [DEBUG] GET /ppid
+[2020-06-25 16:31:38 -0500] [55694] [INFO] Parent changed, shutting down: <Worker 55694>
+[2020-06-25 16:31:38 -0500] [55699] [INFO] Parent changed, shutting down: <Worker 55699>
+[2020-06-25 16:31:38 -0500] [55695] [DEBUG] Closing connection. 
+[2020-06-25 16:31:38 -0500] [55697] [INFO] Parent changed, shutting down: <Worker 55697>
+[2020-06-25 16:31:38 -0500] [55694] [INFO] Worker exiting (pid: 55694)
+[2020-06-25 16:31:38 -0500] [55697] [INFO] Worker exiting (pid: 55697)
+[2020-06-25 16:31:38 -0500] [55695] [INFO] Parent changed, shutting down: <Worker 55695>
+[2020-06-25 16:31:38 -0500] [55695] [INFO] Worker exiting (pid: 55695)
+[2020-06-25 16:31:38 -0500] [55699] [INFO] Worker exiting (pid: 55699)
+[2020-06-25 16:31:39 -0500] [55696] [INFO] Parent changed, shutting down: <Worker 55696>
+[2020-06-25 16:31:39 -0500] [55690] [INFO] Parent changed, shutting down: <Worker 55690>
+[2020-06-25 16:31:39 -0500] [55691] [INFO] Parent changed, shutting down: <Worker 55691>
+[2020-06-25 16:31:39 -0500] [55692] [DEBUG] Closing connection. 
+[2020-06-25 16:31:39 -0500] [55690] [INFO] Worker exiting (pid: 55690)
+[2020-06-25 16:31:39 -0500] [55696] [INFO] Worker exiting (pid: 55696)
+[2020-06-25 16:31:39 -0500] [55691] [INFO] Worker exiting (pid: 55691)
+[2020-06-25 16:31:39 -0500] [55692] [INFO] Parent changed, shutting down: <Worker 55692>
+[2020-06-25 16:31:39 -0500] [55692] [INFO] Worker exiting (pid: 55692)
+[2020-06-25 16:31:39 -0500] [55693] [DEBUG] Closing connection. 
+[2020-06-25 16:31:39 -0500] [55693] [INFO] Parent changed, shutting down: <Worker 55693>
+[2020-06-25 16:31:39 -0500] [55693] [INFO] Worker exiting (pid: 55693)
+[2020-06-25 16:31:49 -0500] [56454] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1023093b0>
+  on_reload: <function OnReload.on_reload at 0x1023094d0>
+  when_ready: <function WhenReady.when_ready at 0x1023095f0>
+  pre_fork: <function Prefork.pre_fork at 0x102309710>
+  post_fork: <function Postfork.post_fork at 0x102309830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x102309950>
+  worker_int: <function WorkerInt.worker_int at 0x102309a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x102309b90>
+  pre_exec: <function PreExec.pre_exec at 0x102309cb0>
+  pre_request: <function PreRequest.pre_request at 0x102309dd0>
+  post_request: <function PostRequest.post_request at 0x102309e60>
+  child_exit: <function ChildExit.child_exit at 0x102309f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1023260e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x102326200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x1023d3cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-25 16:31:49 -0500] [56454] [INFO] Starting gunicorn 19.9.0
+[2020-06-25 16:31:49 -0500] [56454] [DEBUG] Arbiter booted
+[2020-06-25 16:31:49 -0500] [56454] [INFO] Listening at: http://0.0.0.0:22362 (56454)
+[2020-06-25 16:31:49 -0500] [56454] [INFO] Using worker: sync
+[2020-06-25 16:31:49 -0500] [56457] [INFO] Booting worker with pid: 56457
+[2020-06-25 16:31:49 -0500] [56458] [INFO] Booting worker with pid: 56458
+[2020-06-25 16:31:49 -0500] [56459] [INFO] Booting worker with pid: 56459
+[2020-06-25 16:31:49 -0500] [56460] [INFO] Booting worker with pid: 56460
+[2020-06-25 16:31:49 -0500] [56461] [INFO] Booting worker with pid: 56461
+[2020-06-25 16:31:50 -0500] [56462] [INFO] Booting worker with pid: 56462
+[2020-06-25 16:31:50 -0500] [56463] [INFO] Booting worker with pid: 56463
+[2020-06-25 16:31:50 -0500] [56464] [INFO] Booting worker with pid: 56464
+[2020-06-25 16:31:50 -0500] [56465] [INFO] Booting worker with pid: 56465
+[2020-06-25 16:31:50 -0500] [56454] [DEBUG] 9 workers
+2020-06-25 16:31:51,628 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:51,637 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 16:31:51 -0500] [56457] [DEBUG] Closing connection. 
+2020-06-25 16:31:51,840 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:51,848 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:51,883 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:51,901 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:51,960 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:51,968 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:51,989 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:51,989 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:52,026 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:52,027 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:52,035 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:52,043 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:52,050 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:52,056 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 16:31:52,063 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 16:31:52,068 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 16:31:57 -0500] [56464] [DEBUG] GET /ad
+[2020-06-25 16:31:57 -0500] [56465] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 16:31:57 -0500] [56464] [DEBUG] GET /static/images/university.png
+[2020-06-25 16:31:57 -0500] [56465] [DEBUG] GET /favicon.ico
+[2020-06-25 16:31:58 -0500] [56461] [DEBUG] GET /exp
+2020-06-25 16:31:58,383 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-25 16:31:58 -0500] [56465] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 16:31:58 -0500] [56463] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 16:31:58 -0500] [56463] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 16:31:58 -0500] [56462] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 16:31:58 -0500] [56465] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 16:31:58 -0500] [56464] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 16:31:58 -0500] [56465] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 16:31:58 -0500] [56459] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 16:31:58 -0500] [56465] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 16:31:58 -0500] [56459] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 16:31:58 -0500] [56458] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 16:31:58 -0500] [56459] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 16:32:24 -0500] [56464] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56457)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56459)
+[2020-06-25 17:03:34 -0500] [56457] [INFO] Worker exiting (pid: 56457)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56460)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56461)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56462)
+[2020-06-25 17:03:34 -0500] [56459] [INFO] Worker exiting (pid: 56459)
+[2020-06-25 17:03:34 -0500] [56460] [INFO] Worker exiting (pid: 56460)
+[2020-06-25 17:03:34 -0500] [56462] [INFO] Worker exiting (pid: 56462)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56463)
+[2020-06-25 17:03:34 -0500] [56454] [CRITICAL] WORKER TIMEOUT (pid:56465)
+[2020-06-25 17:03:34 -0500] [56461] [INFO] Worker exiting (pid: 56461)
+[2020-06-25 17:03:34 -0500] [56465] [INFO] Worker exiting (pid: 56465)
+[2020-06-25 17:03:34 -0500] [56463] [INFO] Worker exiting (pid: 56463)
+[2020-06-25 17:03:34 -0500] [56570] [INFO] Booting worker with pid: 56570
+[2020-06-25 17:03:34 -0500] [56454] [DEBUG] 6 workers
+[2020-06-25 17:03:34 -0500] [56571] [INFO] Booting worker with pid: 56571
+[2020-06-25 17:03:34 -0500] [56572] [INFO] Booting worker with pid: 56572
+[2020-06-25 17:03:34 -0500] [56573] [INFO] Booting worker with pid: 56573
+[2020-06-25 17:03:34 -0500] [56574] [INFO] Booting worker with pid: 56574
+[2020-06-25 17:03:34 -0500] [56575] [INFO] Booting worker with pid: 56575
+[2020-06-25 17:03:34 -0500] [56576] [INFO] Booting worker with pid: 56576
+[2020-06-25 17:03:34 -0500] [56454] [DEBUG] 9 workers
+2020-06-25 17:03:37,400 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,419 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,444 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,458 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,461 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,468 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,469 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,479 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,504 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,521 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,527 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,535 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:03:37,547 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:03:37,559 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 17:05:57 -0500] [56573] [DEBUG] GET /ad
+[2020-06-25 17:05:57 -0500] [56573] [DEBUG] GET /static/images/university.png
+[2020-06-25 17:05:57 -0500] [56576] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 17:05:57 -0500] [56573] [DEBUG] GET /favicon.ico
+[2020-06-25 17:06:00 -0500] [56570] [DEBUG] Closing connection. 
+[2020-06-25 17:06:02 -0500] [56464] [DEBUG] Closing connection. 
+[2020-06-25 17:06:02 -0500] [56458] [DEBUG] Closing connection. 
+[2020-06-25 17:06:02 -0500] [56458] [DEBUG] GET /ppid
+[2020-06-25 17:06:02 -0500] [56458] [DEBUG] Closing connection. 
+[2020-06-25 17:06:02 -0500] [56574] [INFO] Parent changed, shutting down: <Worker 56574>
+[2020-06-25 17:06:02 -0500] [56573] [INFO] Parent changed, shutting down: <Worker 56573>
+[2020-06-25 17:06:02 -0500] [56575] [INFO] Parent changed, shutting down: <Worker 56575>
+[2020-06-25 17:06:02 -0500] [56573] [INFO] Worker exiting (pid: 56573)
+[2020-06-25 17:06:02 -0500] [56574] [INFO] Worker exiting (pid: 56574)
+[2020-06-25 17:06:02 -0500] [56458] [INFO] Parent changed, shutting down: <Worker 56458>
+[2020-06-25 17:06:02 -0500] [56575] [INFO] Worker exiting (pid: 56575)
+[2020-06-25 17:06:02 -0500] [56458] [INFO] Worker exiting (pid: 56458)
+[2020-06-25 17:06:03 -0500] [56571] [INFO] Parent changed, shutting down: <Worker 56571>
+[2020-06-25 17:06:03 -0500] [56570] [INFO] Parent changed, shutting down: <Worker 56570>
+[2020-06-25 17:06:03 -0500] [56464] [DEBUG] Closing connection. 
+[2020-06-25 17:06:03 -0500] [56571] [INFO] Worker exiting (pid: 56571)
+[2020-06-25 17:06:03 -0500] [56570] [INFO] Worker exiting (pid: 56570)
+[2020-06-25 17:06:03 -0500] [56464] [INFO] Parent changed, shutting down: <Worker 56464>
+[2020-06-25 17:06:03 -0500] [56464] [INFO] Worker exiting (pid: 56464)
+[2020-06-25 17:06:03 -0500] [56576] [DEBUG] Closing connection. 
+[2020-06-25 17:06:03 -0500] [56572] [INFO] Parent changed, shutting down: <Worker 56572>
+[2020-06-25 17:06:03 -0500] [56572] [INFO] Worker exiting (pid: 56572)
+[2020-06-25 17:06:03 -0500] [56576] [INFO] Parent changed, shutting down: <Worker 56576>
+[2020-06-25 17:06:03 -0500] [56576] [INFO] Worker exiting (pid: 56576)
+[2020-06-25 17:06:10 -0500] [56663] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1025c13b0>
+  on_reload: <function OnReload.on_reload at 0x1025c14d0>
+  when_ready: <function WhenReady.when_ready at 0x1025c15f0>
+  pre_fork: <function Prefork.pre_fork at 0x1025c1710>
+  post_fork: <function Postfork.post_fork at 0x1025c1830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1025c1950>
+  worker_int: <function WorkerInt.worker_int at 0x1025c1a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1025c1b90>
+  pre_exec: <function PreExec.pre_exec at 0x1025c1cb0>
+  pre_request: <function PreRequest.pre_request at 0x1025c1dd0>
+  post_request: <function PostRequest.post_request at 0x1025c1e60>
+  child_exit: <function ChildExit.child_exit at 0x1025c1f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1025dd0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1025dd200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x10268bcb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-25 17:06:10 -0500] [56663] [INFO] Starting gunicorn 19.9.0
+[2020-06-25 17:06:10 -0500] [56663] [DEBUG] Arbiter booted
+[2020-06-25 17:06:10 -0500] [56663] [INFO] Listening at: http://0.0.0.0:22362 (56663)
+[2020-06-25 17:06:10 -0500] [56663] [INFO] Using worker: sync
+[2020-06-25 17:06:10 -0500] [56666] [INFO] Booting worker with pid: 56666
+[2020-06-25 17:06:10 -0500] [56667] [INFO] Booting worker with pid: 56667
+[2020-06-25 17:06:10 -0500] [56668] [INFO] Booting worker with pid: 56668
+[2020-06-25 17:06:10 -0500] [56669] [INFO] Booting worker with pid: 56669
+[2020-06-25 17:06:10 -0500] [56670] [INFO] Booting worker with pid: 56670
+[2020-06-25 17:06:10 -0500] [56671] [INFO] Booting worker with pid: 56671
+[2020-06-25 17:06:11 -0500] [56672] [INFO] Booting worker with pid: 56672
+[2020-06-25 17:06:11 -0500] [56673] [INFO] Booting worker with pid: 56673
+[2020-06-25 17:06:11 -0500] [56674] [INFO] Booting worker with pid: 56674
+[2020-06-25 17:06:11 -0500] [56663] [DEBUG] 9 workers
+2020-06-25 17:06:11,876 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:11,895 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 17:06:11 -0500] [56666] [DEBUG] Closing connection. 
+2020-06-25 17:06:12,250 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,263 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,466 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,489 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,689 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,707 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,855 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,864 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,869 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,877 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,923 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,929 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,933 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,939 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:06:12,944 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:06:12,949 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /exp
+2020-06-25 17:06:13,064 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 17:06:13 -0500] [56666] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 17:06:13 -0500] [56667] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /exp
+2020-06-25 17:06:37,427 Accessing /exp: debugIXYEZI debugVARMRW debugAT9O7T 
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 17:06:37 -0500] [56674] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 17:06:37 -0500] [56674] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 17:06:37 -0500] [56668] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 17:06:37 -0500] [56673] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 17:06:37 -0500] [56666] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 17:06:37 -0500] [56669] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 17:06:37 -0500] [56666] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 17:06:37 -0500] [56667] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 17:07:29 -0500] [56672] [DEBUG] GET /ad
+[2020-06-25 17:07:29 -0500] [56670] [DEBUG] Closing connection. 
+[2020-06-25 17:07:29 -0500] [56671] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 17:07:29 -0500] [56670] [DEBUG] GET /static/images/university.png
+[2020-06-25 17:07:32 -0500] [56670] [DEBUG] GET /exp
+2020-06-25 17:07:32,496 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+2020-06-25 17:07:32,510 given Counter({(0, 0): 0}) chose (0, 0)
+[2020-06-25 17:07:32 -0500] [56672] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 17:07:32 -0500] [56670] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 17:07:32 -0500] [56672] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 17:07:32 -0500] [56672] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 17:07:32 -0500] [56670] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 17:07:32 -0500] [56674] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 17:07:32 -0500] [56666] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 17:07:32 -0500] [56673] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 17:07:32 -0500] [56674] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 17:07:32 -0500] [56668] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 17:07:32 -0500] [56669] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 17:07:32 -0500] [56666] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 17:07:59 -0500] [56666] [DEBUG] Closing connection. 
+[2020-06-25 17:07:59 -0500] [56672] [DEBUG] GET /ad
+[2020-06-25 17:07:59 -0500] [56666] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 17:07:59 -0500] [56669] [DEBUG] GET /static/images/university.png
+[2020-06-25 17:08:00 -0500] [56670] [DEBUG] GET /exp
+2020-06-25 17:08:00,786 Accessing /exp: debugQGDQUP debugA87O50 debug4P5QYV 
+2020-06-25 17:08:00,792 given Counter({(0, 0): 1}) chose (0, 0)
+[2020-06-25 17:08:00 -0500] [56669] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 17:08:00 -0500] [56670] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 17:08:00 -0500] [56673] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 17:08:00 -0500] [56674] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 17:08:00 -0500] [56669] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 17:08:00 -0500] [56673] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 17:08:00 -0500] [56672] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 17:08:00 -0500] [56666] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 17:08:00 -0500] [56666] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 17:08:00 -0500] [56674] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 17:08:00 -0500] [56672] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 17:08:00 -0500] [56667] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 17:08:13 -0500] [56672] [DEBUG] Closing connection. 
+[2020-06-25 17:08:15 -0500] [56672] [DEBUG] Closing connection. 
+[2020-06-25 17:08:17 -0500] [56666] [DEBUG] Closing connection. 
+[2020-06-25 17:08:19 -0500] [56666] [DEBUG] Closing connection. 
+[2020-06-25 17:08:19 -0500] [56673] [DEBUG] Closing connection. 
+[2020-06-25 17:08:19 -0500] [56673] [DEBUG] GET /ppid
+[2020-06-25 17:08:19 -0500] [56673] [INFO] Parent changed, shutting down: <Worker 56673>
+[2020-06-25 17:08:19 -0500] [56672] [INFO] Parent changed, shutting down: <Worker 56672>
+[2020-06-25 17:08:19 -0500] [56671] [DEBUG] Closing connection. 
+[2020-06-25 17:08:19 -0500] [56670] [INFO] Parent changed, shutting down: <Worker 56670>
+[2020-06-25 17:08:19 -0500] [56673] [INFO] Worker exiting (pid: 56673)
+[2020-06-25 17:08:19 -0500] [56672] [INFO] Worker exiting (pid: 56672)
+[2020-06-25 17:08:19 -0500] [56670] [INFO] Worker exiting (pid: 56670)
+[2020-06-25 17:08:19 -0500] [56671] [INFO] Parent changed, shutting down: <Worker 56671>
+[2020-06-25 17:08:19 -0500] [56671] [INFO] Worker exiting (pid: 56671)
+[2020-06-25 17:08:20 -0500] [56667] [INFO] Parent changed, shutting down: <Worker 56667>
+[2020-06-25 17:08:20 -0500] [56668] [DEBUG] Closing connection. 
+[2020-06-25 17:08:20 -0500] [56666] [INFO] Parent changed, shutting down: <Worker 56666>
+[2020-06-25 17:08:20 -0500] [56669] [INFO] Parent changed, shutting down: <Worker 56669>
+[2020-06-25 17:08:20 -0500] [56667] [INFO] Worker exiting (pid: 56667)
+[2020-06-25 17:08:20 -0500] [56668] [INFO] Parent changed, shutting down: <Worker 56668>
+[2020-06-25 17:08:20 -0500] [56666] [INFO] Worker exiting (pid: 56666)
+[2020-06-25 17:08:20 -0500] [56669] [INFO] Worker exiting (pid: 56669)
+[2020-06-25 17:08:20 -0500] [56668] [INFO] Worker exiting (pid: 56668)
+[2020-06-25 17:08:20 -0500] [56674] [DEBUG] Closing connection. 
+[2020-06-25 17:08:20 -0500] [56674] [INFO] Parent changed, shutting down: <Worker 56674>
+[2020-06-25 17:08:20 -0500] [56674] [INFO] Worker exiting (pid: 56674)
+[2020-06-25 17:08:26 -0500] [56774] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1025523b0>
+  on_reload: <function OnReload.on_reload at 0x1025524d0>
+  when_ready: <function WhenReady.when_ready at 0x1025525f0>
+  pre_fork: <function Prefork.pre_fork at 0x102552710>
+  post_fork: <function Postfork.post_fork at 0x102552830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x102552950>
+  worker_int: <function WorkerInt.worker_int at 0x102552a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x102552b90>
+  pre_exec: <function PreExec.pre_exec at 0x102552cb0>
+  pre_request: <function PreRequest.pre_request at 0x102552dd0>
+  post_request: <function PostRequest.post_request at 0x102552e60>
+  child_exit: <function ChildExit.child_exit at 0x102552f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10256f0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10256f200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x10261ccb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-25 17:08:26 -0500] [56774] [INFO] Starting gunicorn 19.9.0
+[2020-06-25 17:08:26 -0500] [56774] [DEBUG] Arbiter booted
+[2020-06-25 17:08:26 -0500] [56774] [INFO] Listening at: http://0.0.0.0:22362 (56774)
+[2020-06-25 17:08:26 -0500] [56774] [INFO] Using worker: sync
+[2020-06-25 17:08:26 -0500] [56777] [INFO] Booting worker with pid: 56777
+[2020-06-25 17:08:26 -0500] [56778] [INFO] Booting worker with pid: 56778
+[2020-06-25 17:08:26 -0500] [56779] [INFO] Booting worker with pid: 56779
+[2020-06-25 17:08:26 -0500] [56780] [INFO] Booting worker with pid: 56780
+[2020-06-25 17:08:26 -0500] [56781] [INFO] Booting worker with pid: 56781
+[2020-06-25 17:08:26 -0500] [56782] [INFO] Booting worker with pid: 56782
+[2020-06-25 17:08:26 -0500] [56783] [INFO] Booting worker with pid: 56783
+[2020-06-25 17:08:26 -0500] [56784] [INFO] Booting worker with pid: 56784
+[2020-06-25 17:08:26 -0500] [56785] [INFO] Booting worker with pid: 56785
+[2020-06-25 17:08:26 -0500] [56774] [DEBUG] 9 workers
+2020-06-25 17:08:28,003 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,036 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 17:08:28 -0500] [56777] [DEBUG] Closing connection. 
+2020-06-25 17:08:28,389 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,405 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,485 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,509 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,701 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,714 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,731 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,740 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,746 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,756 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,777 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,783 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,789 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,796 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-25 17:08:28,804 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-25 17:08:28,810 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-25 17:08:34 -0500] [56785] [DEBUG] GET /ad
+[2020-06-25 17:08:34 -0500] [56784] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-25 17:08:34 -0500] [56785] [DEBUG] GET /static/images/university.png
+[2020-06-25 17:08:34 -0500] [56782] [DEBUG] GET /favicon.ico
+[2020-06-25 17:08:35 -0500] [56785] [DEBUG] GET /exp
+2020-06-25 17:08:35,280 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-25 17:08:35 -0500] [56777] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-25 17:08:35 -0500] [56785] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-25 17:08:35 -0500] [56779] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-25 17:08:35 -0500] [56784] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-25 17:08:35 -0500] [56777] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-25 17:08:35 -0500] [56785] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-25 17:08:35 -0500] [56781] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-25 17:08:35 -0500] [56782] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-25 17:08:35 -0500] [56782] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-25 17:08:35 -0500] [56780] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-25 17:08:35 -0500] [56782] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-25 17:08:35 -0500] [56783] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-25 17:08:40 -0500] [56783] [DEBUG] GET /ad
+[2020-06-25 17:08:40 -0500] [56780] [DEBUG] GET /favicon.ico
+[2020-06-25 17:08:45 -0500] [56778] [DEBUG] Closing connection. 
+[2020-06-25 17:08:46 -0500] [56778] [DEBUG] Closing connection. 
+[2020-06-25 17:08:46 -0500] [56780] [DEBUG] Closing connection. 
+[2020-06-25 17:08:46 -0500] [56778] [DEBUG] GET /ppid
+[2020-06-25 17:08:46 -0500] [56785] [INFO] Parent changed, shutting down: <Worker 56785>
+[2020-06-25 17:08:46 -0500] [56778] [INFO] Parent changed, shutting down: <Worker 56778>
+[2020-06-25 17:08:46 -0500] [56781] [DEBUG] Closing connection. 
+[2020-06-25 17:08:46 -0500] [56784] [INFO] Parent changed, shutting down: <Worker 56784>
+[2020-06-25 17:08:46 -0500] [56785] [INFO] Worker exiting (pid: 56785)
+[2020-06-25 17:08:46 -0500] [56781] [INFO] Parent changed, shutting down: <Worker 56781>
+[2020-06-25 17:08:46 -0500] [56781] [INFO] Worker exiting (pid: 56781)
+[2020-06-25 17:08:46 -0500] [56784] [INFO] Worker exiting (pid: 56784)
+[2020-06-25 17:08:46 -0500] [56778] [INFO] Worker exiting (pid: 56778)
+[2020-06-25 17:08:47 -0500] [56782] [INFO] Parent changed, shutting down: <Worker 56782>
+[2020-06-25 17:08:47 -0500] [56780] [INFO] Parent changed, shutting down: <Worker 56780>
+[2020-06-25 17:08:47 -0500] [56783] [DEBUG] Closing connection. 
+[2020-06-25 17:08:47 -0500] [56782] [INFO] Worker exiting (pid: 56782)
+[2020-06-25 17:08:47 -0500] [56780] [INFO] Worker exiting (pid: 56780)
+[2020-06-25 17:08:47 -0500] [56783] [INFO] Parent changed, shutting down: <Worker 56783>
+[2020-06-25 17:08:47 -0500] [56783] [INFO] Worker exiting (pid: 56783)
+[2020-06-25 17:08:47 -0500] [56777] [INFO] Parent changed, shutting down: <Worker 56777>
+[2020-06-25 17:08:47 -0500] [56779] [DEBUG] Closing connection. 
+[2020-06-25 17:08:47 -0500] [56777] [INFO] Worker exiting (pid: 56777)
+[2020-06-25 17:08:47 -0500] [56779] [INFO] Parent changed, shutting down: <Worker 56779>
+[2020-06-25 17:08:47 -0500] [56779] [INFO] Worker exiting (pid: 56779)
