@@ -1,61 +1,92 @@
+<head>
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+</head>
+
+
+<script>
+
+const ITEMS_PER_ROW_START = 3;
+
+function dragImage(img) {
+	img.dataTransfer.setData("text", img.target.id);
+}
+
+function enableDrop(img, isStart) {
+	var target = document.getElementById(img.target.id);
+	var numChildren = target.childElementCount;
+	if((!isStart || numChildren < ITEMS_PER_ROW_START) && (target.className == "card" || target.className == "col")) {
+		img.preventDefault();
+	}
+}
+
+function dropImg(img) {
+	img.preventDefault();
+	img.target.appendChild(document.getElementById(img.dataTransfer.getData("text")));
+}
+
+</script>
+
+
 <p>​</p>
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <style type="text/css">body {
-        /*background-image: url("https://drive.google.com/uc?id=17V_BRkPML6-Y5vKgTY-TB-cheOM-WMA1");*/
-    }
-    .card-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 60vw;
-        background-color: #85482B;
-        padding: 5rem;
-        min-height: 60vh;
-        box-sizing: border-box;
-    }
-    .card {
-        background-color: #EDAB8A;
-        min-height: 200px;
-        margin-bottom: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-image {
-        padding-right: 5px;
-    }
-    .card-content {
-        flex-basis: 150px;
-        font-size:120%;
-    }
+/*background-image: url("https://drive.google.com/uc?id=17V_BRkPML6-Y5vKgTY-TB-cheOM-WMA1");*/
+}
+.card-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60vw;
+	background-color: #85482B;
+	padding: 5rem;
+	min-height: 60vh;
+	box-sizing: border-box;
+}
+.card {
+background-color: #EDAB8A;
+min-height: 200px;
+margin-bottom: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card-image {
+padding-right: 5px;
+}
+.card-content {
+flex-basis: 150px;
+font-size:120%;
+}
 </style>
+
 <p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
 <div class="panel-body" id="instructionBody">
 <div class="row" id="workContent">
 <div class="col-lg-3"><div style="text-align:center; font-size:120%;"><b><script> getName("img3"); </script></b></div>
 <div class="btn-group">
-	<div class="row">
-		<div class="col">
-            <!--<button style="background: https://drive.google.com/file/d/1HfPErmEoPEAXXk626GPN2mb8S_Rc-Oiu/view?usp=sharing; width: 150px; height: 150px; border-width: 5px; border-style: solid;" /> -->
-            <input type="image" src="{{ server_location }}/static/images/Jelly.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" length="150" />
-		</div>
-		<div class="col">
-            <input type="image" src="{{ server_location }}/static/images/Orange.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Onion.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" length="150" />
-		</div>
-		<div class="col">
-            <input type="image" src="{{ server_location }}/static/images/Crackers.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Corn.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Coke.jpg" width="150" length="150" />
-		</div>
-		<div class="col">
-            <input type="image" src="{{ server_location }}/static/images/Cereal.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Bread.jpg" width="150" length="150" />
-            <input type="image" src="{{ server_location }}/static/images/Apple.jpg" width="150" length="150" />
-		</div>
+<div class="row">
+	<div class="col" id="col_1" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+    <!--<button style="background: https://drive.google.com/file/d/1HfPErmEoPEAXXk626GPN2mb8S_Rc-Oiu/view?usp=sharing; width: 150px; height: 150px; border-width: 5px; border-style: solid;" /> -->
+    <input type="image" draggable="true" ondragstart="dragImage(event)" id="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" length="150" />
+	</div>		
+	<div class="col" id="col_2" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" length="150" />
+	</div>		
+	<div class="col" id="col_3" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" length="150" />
+	</div>	
+	<div class="col" id="col_4" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" length="150" />
+    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" length="150" />
 	</div>
+</div>
 </div>
 <h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
 
@@ -70,6 +101,14 @@ function resize() {
 </div>
 <div class="col-lg-8">
 <div class="card-container">
+<div class="card" id="top_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+</div>
+<div class="card" id="middle_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+</div>
+<div class="card" id="bottom_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+</div>
+
+<!--
 <div class="card">
 <div class="card-image"><img alt="img1" class="img-responsive" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url2}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
 <div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Top" /> Here</label><br />
@@ -85,10 +124,12 @@ function resize() {
 <div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Bottom" /> Here </label><br />
 <b><script> getName("img4"); </script></b></div>
 </div>
-<!-- <input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /> --></div>
+<!- - <input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /> - -></div>
+</div>
+-->
 </div>
 </div>
-</div>
+
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
 <style type="text/css">#collapseTrigger {
         color: #fff;
