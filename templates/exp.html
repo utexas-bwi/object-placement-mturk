@@ -23,6 +23,7 @@ function enableDrop(img, isStart) {
 function dropImg(img) {
 	img.preventDefault();
 	img.target.appendChild(document.getElementById(img.dataTransfer.getData("text")));
+    resize(img.dataTransfer.getData("text"));
 }
 
 </script>
@@ -43,24 +44,24 @@ function dropImg(img) {
 	box-sizing: border-box;
 }
 .card {
-background-color: #EDAB8A;
-min-height: 200px;
-margin-bottom: 5rem;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-color: #EDAB8A;
+    min-height: 200px;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-image {
-padding-right: 5px;
+    padding-right: 5px;
 }
 .card-content {
-flex-basis: 150px;
-font-size:120%;
+    flex-basis: 150px;
+    font-size:120%;
 }
 </style>
 
 <p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
-<div class="panel-body" id="instructionBody">
+<div class="panel-body" id="instructionBody" onload="declareVars()">
 <div class="row" id="workContent">
 <div class="col-lg-3"><div style="text-align:center; font-size:120%;"><b><script> getName("img3"); </script></b></div>
 <div class="btn-group">
@@ -91,12 +92,12 @@ font-size:120%;
 <h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
 
 <script>
-function resize() {
-    document.getElementById("item").style.width = 200;
-    document.getElementById("item").style.length = 200;
-}
+    function resize(item) {
+        document.getElementById(item).style.width = 100;
+        document.getElementById(item).style.length = 100;
+    }
 </script>
-<button type="button" onclick="resize()">RESIZE TEST</button>
+<!--<button type="button" onclick="resize()">RESIZE TEST</button>-->
 
 </div>
 <div class="col-lg-8">
@@ -142,10 +143,10 @@ function resize() {
     #instructionBody table {
         font-size: 14px;
     }
-        #instructionBody table caption {
-            text-align: left;
-            padding: 0 0 5px 0;
-        }
+    #instructionBody table caption {
+        text-align: left;
+        padding: 0 0 5px 0;
+    }
     #CategoryInputs {
         display: block;
         margin-top: 10px;
