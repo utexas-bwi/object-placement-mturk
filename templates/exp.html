@@ -1,31 +1,32 @@
 <head>
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-</head>
-
 
 <script>
-
-const ITEMS_PER_ROW_START = 3;
-
-function dragImage(img) {
-	img.dataTransfer.setData("text", img.target.id);
-}
-
-function enableDrop(img, isStart) {
-	var target = document.getElementById(img.target.id);
-	var numChildren = target.childElementCount;
-	if((!isStart || numChildren < ITEMS_PER_ROW_START) && (target.className == "card" || target.className == "col")) {
-		img.preventDefault();
-	}
-}
-
-function dropImg(img) {
-	img.preventDefault();
-	img.target.appendChild(document.getElementById(img.dataTransfer.getData("text")));
-}
-
+	$(function() {
+		$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable({
+			connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items",
+			dropOnEmpty: true,
+			start: function(event, ui) {
+				clone = $(ui.item[0].outerHTML).clone();
+			},
+			// TODO: Make this opaque, so it is more clear this is a preview before the user drops the image
+			placeholder: {
+				element: function(clone, ui) {
+					var preview = $('<li class="selected">' + clone[0].innerHTML + '</li>')
+					return preview;
+				},
+				update: function() {
+					return;
+				}
+			}
+		});
+		
+		$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").disableSelection();
+	});
 </script>
+
+</head>
 
 
 <p>​</p>
@@ -43,20 +44,39 @@ function dropImg(img) {
 	box-sizing: border-box;
 }
 .card {
-background-color: #EDAB8A;
-min-height: 200px;
-margin-bottom: 5rem;
-display: flex;
-justify-content: center;
-align-items: center;
+	background-color: #EDAB8A;
+	min-height: 200px;
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .card-image {
-padding-right: 5px;
+	padding-right: 5px;
 }
 .card-content {
-flex-basis: 150px;
-font-size:120%;
+	flex-basis: 150px;
+	font-size:120%;
 }
+.img_list {
+	list-style-type: none;
+	justify-content: center;
+	display: flex;
+	/* This is only here for debugging visualization, delete later */
+	background-color: lightblue;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	min-height: 150px;
+	width: 100%;
+}
+
+.img_list li {
+	display: list-item;
+	height: 150px;
+	width: 150px;
+	background-color: blue;
+}
+
 </style>
 
 <p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
@@ -65,38 +85,48 @@ font-size:120%;
 <div class="col-lg-3"><div style="text-align:center; font-size:120%;"><b><script> getName("img3"); </script></b></div>
 <div class="btn-group">
 <div class="row">
-	<div class="col" id="col_1" ondrop="dropImg(event)" ondragover="enableDrop(event)">
-    <!--<button style="background: https://drive.google.com/file/d/1HfPErmEoPEAXXk626GPN2mb8S_Rc-Oiu/view?usp=sharing; width: 150px; height: 150px; border-width: 5px; border-style: solid;" /> -->
-    <input type="image" draggable="true" ondragstart="dragImage(event)" id="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" length="150" />
-	</div>		
-	<div class="col" id="col_2" ondrop="dropImg(event)" ondragover="enableDrop(event)">
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" length="150" />
-	</div>		
-	<div class="col" id="col_3" ondrop="dropImg(event)" ondragover="enableDrop(event)">
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" length="150" />
-	</div>	
-	<div class="col" id="col_4" ondrop="dropImg(event)" ondragover="enableDrop(event)">
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" length="150" />
-    <input type="image" draggable="true" ondragStart="dragImage(event)" id="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" length="150" />
+	<div class="col" id="col_1">
+    	<ul id="col_1_items" class="img_list">
+		<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
+    		<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
+    		<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
+	</ul>
 	</div>
+	<div class="col" id="col_2">
+    	<ul id="col_2_items" class="img_list">
+		<li><img alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" height="150" /></li>
+    		<li><img alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" height="150" /></li>
+    		<li><img alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" height="150" /></li>
+	</ul>
+	</div>		
+	<div class="col" id="col_3">
+    	<ul id="col_3_items" class="img_list">
+		<li><img alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" height="150" /></li>
+    		<li><img alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" height="150" /></li>
+    		<li><img alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" height="150" /></li>
+	</ul>
+	</div>		
+	<div class="col" id="col_4">
+    	<ul id="col_4_items" class="img_list">
+		<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
+    		<li><img alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" height="150" /></li>
+    		<li><img alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" height="150" /></li>
+	</ul>
+	</div>		
 </div>
 </div>
 <h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
 </div>
 <div class="col-lg-8">
 <div class="card-container">
-<div class="card" id="top_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+<div class="card">
+	<ul id="top_shelf_items" class="img_list"></ul>
 </div>
-<div class="card" id="middle_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+<div class="card">
+	<ul id="middle_shelf_items" class="img_list"></ul>
 </div>
-<div class="card" id="bottom_shelf" ondrop="dropImg(event)" ondragover="enableDrop(event)">
+<div class="card">
+	<ul id="bottom_shelf_items" class="img_list"></ul>
 </div>
 
 <!--
