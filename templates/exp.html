@@ -6,24 +6,22 @@
 	$(function() {
 		$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable({
 			connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items",
-			dropOnEmpty: true,
-			start: function(event, ui) {
-				clone = $(ui.item[0].outerHTML).clone();
-			},
-			// TODO: Make this opaque, so it is more clear this is a preview before the user drops the image
-			placeholder: {
-				element: function(clone, ui) {
-					var preview = $('<li class="selected">' + clone[0].innerHTML + '</li>')
-					return preview;
-				},
-				update: function() {
-					return;
-				}
+			revert: true,
+			update: function(e, ui) {		
+				$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable("refresh");
 			}
 		});
-		
-		$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").disableSelection();
+/*
+
+		$(".card").mouseup(function()){
+			$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable("refresh");
+		}
+*/		
+		//$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").disableSelection();
 	});
+
+
+
 </script>
 
 </head>
@@ -59,9 +57,6 @@
 	font-size:120%;
 }
 .img_list {
-	list-style-type: none;
-	justify-content: center;
-	display: flex;
 	/* This is only here for debugging visualization, delete later */
 	background-color: lightblue;
 	padding-top: 25px;
@@ -71,10 +66,7 @@
 }
 
 .img_list li {
-	display: list-item;
-	height: 150px;
-	width: 150px;
-	background-color: blue;
+	float: left;
 }
 
 </style>
@@ -129,7 +121,12 @@
 <div class="col-lg-8">
 <div class="card-container">
 <div class="card">
-	<ul id="top_shelf_items" class="img_list"></ul>
+	<ul id="top_shelf_items" class="img_list">
+		<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
+    		<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
+    		<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
+		<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
+	</ul>
 </div>
 <div class="card">
 	<ul id="middle_shelf_items" class="img_list"></ul>
