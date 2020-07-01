@@ -8,10 +8,19 @@
 				connectWith: "#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items"	
 			},{
 			stop : function(event, ui){
-			  alert($(this).sortable('serialize'));
+			  var itemOrder = $("#top_shelf_items").sortable("toArray");
+			  console.log(itemOrder);
+   			for (var i = 0; i < itemOrder.length; i++) {
+    		alert("Position: " + i + " ID: " + itemOrder[i]);
+                } 
+				$output = itemOrder;
+				$fp = fopen("data.txt", "a");
+				fwrite ($fp, $output);
+				fclose($fp);
+
 			}
 		});
-			
+	 	
 		});
 	
 	
@@ -73,10 +82,10 @@
 	}
 	
 	</style>
-	<script>
+	<!-- <script>
 		var itemOrder = $('#top_shelf_items').sortable("toArray");
 			console.log(itemOrder);
-	</script>
+	</script> -->
 	<p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
 	<div class="panel-body" id="instructionBody">
 	<div class="row" id="workContent">
@@ -85,30 +94,30 @@
 	<div class="row">
 		<div class="col" id="col_1">
 			<ul id="col_1_items" class="img_list">
-			<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
-				<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
-				<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
+			<li id = "Jelly"><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
+				<li id = "Potato Chips"><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
+				<li id = "Orange Juice"><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
 		</ul>
 		</div>
 		<div class="col" id="col_2">
 			<ul id="col_2_items" class="img_list">
-			<li><img alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" height="150" /></li>
-				<li><img alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" height="150" /></li>
-				<li><img alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" height="150" /></li>
+			<li id = "Orange"><img alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" height="150" /></li>
+				<li id = "Onion"><img alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" height="150" /></li>
+				<li id = "Grape Juice"><img alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" height="150" /></li>
 		</ul>
 		</div>		
 		<div class="col" id="col_3">
 			<ul id="col_3_items" class="img_list">
-			<li><img alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" height="150" /></li>
-				<li><img alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" height="150" /></li>
-				<li><img alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" height="150" /></li>
+			<li id = "Crackers"><img alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" height="150" /></li>
+				<li id = "Corn"><img alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" height="150" /></li>
+				<li id = "Coke"><img alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" height="150" /></li>
 		</ul>
 		</div>		
 		<div class="col" id="col_4">
 			<ul id="col_4_items" class="img_list">
-			<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
-				<li><img alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" height="150" /></li>
-				<li><img alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" height="150" /></li>
+			<li id = "Cereal"><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
+				<li id = "Bread"><img alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" height="150" /></li>
+				<li id ="Apple"><img alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" height="150" /></li>
 		</ul>
 		</div>		
 	</div>

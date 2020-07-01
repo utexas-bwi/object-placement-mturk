@@ -11,6 +11,14 @@ psiturk_keywords = drawtogether
 organization_name = UNIVERSITY OF TEXAS AT AUSTIN
 browser_exclude_rule = MSIE, mobile, tablet
 
+[AWS Access]
+aws_access_key_id = AKIAJPP53QKQF25BUV2Q
+aws_secret_access_key = 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
+aws_region = us-east-1
+[psiTurk Access]
+psiturk_access_key_id = 2uhZ55MMBEcdrkNTSeGr7C
+psiturk_secret_access_id = kV5YbnzL7SMJaJhXzNZphh
+
 [Database Parameters]
 database_url = sqlite:///participants.db
 table_name = turkdemo
