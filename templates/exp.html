@@ -4,20 +4,9 @@
 
 <script>
 	$(function() {
-		$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable({
-			connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items",
-			revert: true,
-			update: function(e, ui) {		
-				$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable("refresh");
-			}
+		$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
+			connectWith: "#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items"	
 		});
-/*
-
-		$(".card").mouseup(function()){
-			$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").sortable("refresh");
-		}
-*/		
-		//$("#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items, #middle_shelf_items, #bottom_shelf_items").disableSelection();
 	});
 
 
@@ -56,17 +45,26 @@
 	flex-basis: 150px;
 	font-size:120%;
 }
+.col {
+	width: 510px;
+	height: 220px;	
+}
 .img_list {
 	/* This is only here for debugging visualization, delete later */
 	background-color: lightblue;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	min-height: 150px;
+	min-height: 220px;
 	width: 100%;
+	list-style-type: none;
+	padding-left: 0px;
 }
 
 .img_list li {
 	float: left;
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 </style>
@@ -121,18 +119,13 @@
 <div class="col-lg-8">
 <div class="card-container">
 <div class="card">
-	<ul id="top_shelf_items" class="img_list">
-		<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
-    		<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
-    		<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
-		<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
-	</ul>
+	<ul id="top_shelf_items" class="img_list"><li></li></ul>
 </div>
 <div class="card">
-	<ul id="middle_shelf_items" class="img_list"></ul>
+	<ul id="middle_shelf_items" class="img_list"><li></li></ul>
 </div>
 <div class="card">
-	<ul id="bottom_shelf_items" class="img_list"></ul>
+	<ul id="bottom_shelf_items" class="img_list"><li></li></ul>
 </div>
 
 <!--
