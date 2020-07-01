@@ -5715,3 +5715,1931 @@
 [2020-06-28 22:24:40 -0500] [67156] [INFO] Worker exiting (pid: 67156)
 [2020-06-28 22:24:40 -0500] [67157] [INFO] Parent changed, shutting down: <Worker 67157>
 [2020-06-28 22:24:40 -0500] [67157] [INFO] Worker exiting (pid: 67157)
+[2020-06-29 20:52:06 -0500] [3702] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1028233b0>
+  on_reload: <function OnReload.on_reload at 0x1028234d0>
+  when_ready: <function WhenReady.when_ready at 0x1028235f0>
+  pre_fork: <function Prefork.pre_fork at 0x102823710>
+  post_fork: <function Postfork.post_fork at 0x102823830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x102823950>
+  worker_int: <function WorkerInt.worker_int at 0x102823a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x102823b90>
+  pre_exec: <function PreExec.pre_exec at 0x102823cb0>
+  pre_request: <function PreRequest.pre_request at 0x102823dd0>
+  post_request: <function PostRequest.post_request at 0x102823e60>
+  child_exit: <function ChildExit.child_exit at 0x102823f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1028400e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x102840200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x1028edcb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-29 20:52:06 -0500] [3702] [INFO] Starting gunicorn 19.9.0
+[2020-06-29 20:52:06 -0500] [3702] [DEBUG] Arbiter booted
+[2020-06-29 20:52:06 -0500] [3702] [INFO] Listening at: http://0.0.0.0:22362 (3702)
+[2020-06-29 20:52:06 -0500] [3702] [INFO] Using worker: sync
+[2020-06-29 20:52:06 -0500] [3705] [INFO] Booting worker with pid: 3705
+[2020-06-29 20:52:06 -0500] [3706] [INFO] Booting worker with pid: 3706
+[2020-06-29 20:52:07 -0500] [3707] [INFO] Booting worker with pid: 3707
+[2020-06-29 20:52:07 -0500] [3708] [INFO] Booting worker with pid: 3708
+[2020-06-29 20:52:07 -0500] [3709] [INFO] Booting worker with pid: 3709
+[2020-06-29 20:52:07 -0500] [3710] [INFO] Booting worker with pid: 3710
+[2020-06-29 20:52:07 -0500] [3711] [INFO] Booting worker with pid: 3711
+[2020-06-29 20:52:07 -0500] [3712] [INFO] Booting worker with pid: 3712
+[2020-06-29 20:52:07 -0500] [3713] [INFO] Booting worker with pid: 3713
+[2020-06-29 20:52:07 -0500] [3702] [DEBUG] 9 workers
+2020-06-29 20:52:09,465 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:09,474 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] Closing connection. 
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /ad
+2020-06-29 20:52:09,581 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:09,605 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /exp
+2020-06-29 20:52:09,643 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/university.png
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /static/css/bootstrap.min.css
+2020-06-29 20:52:09,814 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:09,822 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-29 20:52:09 -0500] [3706] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-29 20:52:09 -0500] [3708] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-29 20:52:09 -0500] [3705] [DEBUG] GET /static/images/Apple.jpg
+2020-06-29 20:52:09,977 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:09,980 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:09,987 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-29 20:52:10,031 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-29 20:52:10,126 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:10,134 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-29 20:52:10,141 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:10,152 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-29 20:52:10,204 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:10,212 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-29 20:52:10,228 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-29 20:52:10,237 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-29 20:52:10 -0500] [3708] [DEBUG] GET /favicon.ico
+[2020-06-29 20:52:23 -0500] [3713] [DEBUG] GET /ad
+[2020-06-29 20:52:23 -0500] [3713] [DEBUG] GET /static/images/university.png
+[2020-06-29 20:52:23 -0500] [3712] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-29 20:52:23 -0500] [3713] [DEBUG] GET /favicon.ico
+[2020-06-29 20:52:24 -0500] [3713] [DEBUG] Closing connection. 
+[2020-06-29 20:52:25 -0500] [3708] [DEBUG] Closing connection. 
+[2020-06-29 20:52:25 -0500] [3705] [DEBUG] Closing connection. 
+[2020-06-29 20:52:25 -0500] [3705] [DEBUG] GET /ppid
+[2020-06-29 20:52:25 -0500] [3705] [DEBUG] Closing connection. 
+[2020-06-29 20:52:25 -0500] [3706] [INFO] Parent changed, shutting down: <Worker 3706>
+[2020-06-29 20:52:25 -0500] [3712] [INFO] Parent changed, shutting down: <Worker 3712>
+[2020-06-29 20:52:25 -0500] [3705] [INFO] Parent changed, shutting down: <Worker 3705>
+[2020-06-29 20:52:25 -0500] [3706] [INFO] Worker exiting (pid: 3706)
+[2020-06-29 20:52:25 -0500] [3712] [INFO] Worker exiting (pid: 3712)
+[2020-06-29 20:52:25 -0500] [3705] [INFO] Worker exiting (pid: 3705)
+[2020-06-29 20:52:26 -0500] [3707] [INFO] Parent changed, shutting down: <Worker 3707>
+[2020-06-29 20:52:26 -0500] [3708] [INFO] Parent changed, shutting down: <Worker 3708>
+[2020-06-29 20:52:26 -0500] [3711] [DEBUG] Closing connection. 
+[2020-06-29 20:52:26 -0500] [3710] [INFO] Parent changed, shutting down: <Worker 3710>
+[2020-06-29 20:52:26 -0500] [3707] [INFO] Worker exiting (pid: 3707)
+[2020-06-29 20:52:26 -0500] [3708] [INFO] Worker exiting (pid: 3708)
+[2020-06-29 20:52:26 -0500] [3711] [INFO] Parent changed, shutting down: <Worker 3711>
+[2020-06-29 20:52:26 -0500] [3710] [INFO] Worker exiting (pid: 3710)
+[2020-06-29 20:52:26 -0500] [3711] [INFO] Worker exiting (pid: 3711)
+[2020-06-29 20:52:26 -0500] [3713] [DEBUG] Closing connection. 
+[2020-06-29 20:52:26 -0500] [3709] [INFO] Parent changed, shutting down: <Worker 3709>
+[2020-06-29 20:52:26 -0500] [3709] [INFO] Worker exiting (pid: 3709)
+[2020-06-29 20:52:26 -0500] [3713] [INFO] Parent changed, shutting down: <Worker 3713>
+[2020-06-29 20:52:26 -0500] [3713] [INFO] Worker exiting (pid: 3713)
+[2020-06-30 13:07:40 -0500] [4708] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x110bad3b0>
+  on_reload: <function OnReload.on_reload at 0x110bad4d0>
+  when_ready: <function WhenReady.when_ready at 0x110bad5f0>
+  pre_fork: <function Prefork.pre_fork at 0x110bad710>
+  post_fork: <function Postfork.post_fork at 0x110bad830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x110bad950>
+  worker_int: <function WorkerInt.worker_int at 0x110bada70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x110badb90>
+  pre_exec: <function PreExec.pre_exec at 0x110badcb0>
+  pre_request: <function PreRequest.pre_request at 0x110baddd0>
+  post_request: <function PostRequest.post_request at 0x110bade60>
+  child_exit: <function ChildExit.child_exit at 0x110badf80>
+  worker_exit: <function WorkerExit.worker_exit at 0x110bca0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x110bca200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x110c77cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-30 13:07:40 -0500] [4708] [INFO] Starting gunicorn 19.9.0
+[2020-06-30 13:07:40 -0500] [4708] [DEBUG] Arbiter booted
+[2020-06-30 13:07:40 -0500] [4708] [INFO] Listening at: http://0.0.0.0:22362 (4708)
+[2020-06-30 13:07:40 -0500] [4708] [INFO] Using worker: sync
+[2020-06-30 13:07:40 -0500] [4711] [INFO] Booting worker with pid: 4711
+[2020-06-30 13:07:40 -0500] [4712] [INFO] Booting worker with pid: 4712
+[2020-06-30 13:07:40 -0500] [4713] [INFO] Booting worker with pid: 4713
+[2020-06-30 13:07:40 -0500] [4714] [INFO] Booting worker with pid: 4714
+[2020-06-30 13:07:40 -0500] [4715] [INFO] Booting worker with pid: 4715
+[2020-06-30 13:07:40 -0500] [4716] [INFO] Booting worker with pid: 4716
+[2020-06-30 13:07:40 -0500] [4717] [INFO] Booting worker with pid: 4717
+[2020-06-30 13:07:40 -0500] [4718] [INFO] Booting worker with pid: 4718
+[2020-06-30 13:07:40 -0500] [4719] [INFO] Booting worker with pid: 4719
+[2020-06-30 13:07:40 -0500] [4708] [DEBUG] 9 workers
+2020-06-30 13:07:42,053 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,065 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:07:42 -0500] [4711] [DEBUG] Closing connection. 
+2020-06-30 13:07:42,130 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,153 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:07:42 -0500] [4711] [DEBUG] GET /ad
+2020-06-30 13:07:42,310 Secret key: 'this is my secret key which is hard to guess, i should change this'
+[2020-06-30 13:07:42 -0500] [4712] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-30 13:07:42 -0500] [4711] [DEBUG] GET /static/images/university.png
+[2020-06-30 13:07:42 -0500] [4712] [DEBUG] GET /favicon.ico
+2020-06-30 13:07:42,433 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,597 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,604 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,704 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,715 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,717 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,729 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,734 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,737 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,752 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,760 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:07:42,760 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:07:42,767 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:07:43 -0500] [4717] [DEBUG] GET /exp
+2020-06-30 13:07:43,611 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-30 13:07:43 -0500] [4718] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-30 13:07:43 -0500] [4717] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-30 13:07:43 -0500] [4717] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-30 13:07:43 -0500] [4716] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-30 13:07:43 -0500] [4718] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-30 13:07:43 -0500] [4715] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-30 13:07:43 -0500] [4719] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-30 13:07:43 -0500] [4718] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-30 13:07:43 -0500] [4719] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-30 13:07:43 -0500] [4716] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-30 13:07:43 -0500] [4718] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-30 13:07:43 -0500] [4719] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-30 13:12:20 -0500] [4718] [DEBUG] Closing connection. 
+[2020-06-30 13:12:21 -0500] [4718] [DEBUG] Closing connection. 
+[2020-06-30 13:12:22 -0500] [4718] [DEBUG] Closing connection. 
+[2020-06-30 13:12:23 -0500] [4713] [DEBUG] Closing connection. 
+[2020-06-30 13:12:23 -0500] [4719] [DEBUG] Closing connection. 
+[2020-06-30 13:12:23 -0500] [4718] [DEBUG] Closing connection. 
+[2020-06-30 13:12:23 -0500] [4713] [DEBUG] GET /ppid
+[2020-06-30 13:12:23 -0500] [4718] [INFO] Parent changed, shutting down: <Worker 4718>
+[2020-06-30 13:12:23 -0500] [4719] [INFO] Parent changed, shutting down: <Worker 4719>
+[2020-06-30 13:12:23 -0500] [4713] [DEBUG] Closing connection. 
+[2020-06-30 13:12:23 -0500] [4718] [INFO] Worker exiting (pid: 4718)
+[2020-06-30 13:12:23 -0500] [4719] [INFO] Worker exiting (pid: 4719)
+[2020-06-30 13:12:23 -0500] [4713] [INFO] Parent changed, shutting down: <Worker 4713>
+[2020-06-30 13:12:23 -0500] [4713] [INFO] Worker exiting (pid: 4713)
+[2020-06-30 13:12:24 -0500] [4712] [INFO] Parent changed, shutting down: <Worker 4712>
+[2020-06-30 13:12:24 -0500] [4715] [DEBUG] Closing connection. 
+[2020-06-30 13:12:24 -0500] [4716] [INFO] Parent changed, shutting down: <Worker 4716>
+[2020-06-30 13:12:24 -0500] [4711] [INFO] Parent changed, shutting down: <Worker 4711>
+[2020-06-30 13:12:24 -0500] [4712] [INFO] Worker exiting (pid: 4712)
+[2020-06-30 13:12:24 -0500] [4716] [INFO] Worker exiting (pid: 4716)
+[2020-06-30 13:12:24 -0500] [4711] [INFO] Worker exiting (pid: 4711)
+[2020-06-30 13:12:24 -0500] [4715] [INFO] Parent changed, shutting down: <Worker 4715>
+[2020-06-30 13:12:24 -0500] [4715] [INFO] Worker exiting (pid: 4715)
+[2020-06-30 13:12:24 -0500] [4714] [INFO] Parent changed, shutting down: <Worker 4714>
+[2020-06-30 13:12:24 -0500] [4717] [DEBUG] Closing connection. 
+[2020-06-30 13:12:24 -0500] [4714] [INFO] Worker exiting (pid: 4714)
+[2020-06-30 13:12:24 -0500] [4717] [INFO] Parent changed, shutting down: <Worker 4717>
+[2020-06-30 13:12:24 -0500] [4717] [INFO] Worker exiting (pid: 4717)
+[2020-06-30 13:12:33 -0500] [4915] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x104b603b0>
+  on_reload: <function OnReload.on_reload at 0x104b604d0>
+  when_ready: <function WhenReady.when_ready at 0x104b605f0>
+  pre_fork: <function Prefork.pre_fork at 0x104b60710>
+  post_fork: <function Postfork.post_fork at 0x104b60830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x104b60950>
+  worker_int: <function WorkerInt.worker_int at 0x104b60a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x104b60b90>
+  pre_exec: <function PreExec.pre_exec at 0x104b60cb0>
+  pre_request: <function PreRequest.pre_request at 0x104b60dd0>
+  post_request: <function PostRequest.post_request at 0x104b60e60>
+  child_exit: <function ChildExit.child_exit at 0x104b60f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x104b7d0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x104b7d200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x104c2acb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-30 13:12:33 -0500] [4915] [INFO] Starting gunicorn 19.9.0
+[2020-06-30 13:12:33 -0500] [4915] [DEBUG] Arbiter booted
+[2020-06-30 13:12:33 -0500] [4915] [INFO] Listening at: http://0.0.0.0:22362 (4915)
+[2020-06-30 13:12:33 -0500] [4915] [INFO] Using worker: sync
+[2020-06-30 13:12:33 -0500] [4918] [INFO] Booting worker with pid: 4918
+[2020-06-30 13:12:33 -0500] [4919] [INFO] Booting worker with pid: 4919
+[2020-06-30 13:12:33 -0500] [4920] [INFO] Booting worker with pid: 4920
+[2020-06-30 13:12:33 -0500] [4922] [INFO] Booting worker with pid: 4922
+[2020-06-30 13:12:33 -0500] [4921] [INFO] Booting worker with pid: 4921
+[2020-06-30 13:12:33 -0500] [4923] [INFO] Booting worker with pid: 4923
+[2020-06-30 13:12:33 -0500] [4924] [INFO] Booting worker with pid: 4924
+[2020-06-30 13:12:33 -0500] [4925] [INFO] Booting worker with pid: 4925
+[2020-06-30 13:12:33 -0500] [4926] [INFO] Booting worker with pid: 4926
+[2020-06-30 13:12:33 -0500] [4915] [DEBUG] 9 workers
+2020-06-30 13:12:35,124 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,149 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,165 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,180 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:12:35 -0500] [4918] [DEBUG] Closing connection. 
+2020-06-30 13:12:35,260 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,286 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,390 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,396 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,407 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,448 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,466 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,474 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,496 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,505 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,511 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,511 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:12:35,516 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:12:35,519 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:12:35 -0500] [4919] [DEBUG] GET /ad
+[2020-06-30 13:12:35 -0500] [4919] [DEBUG] GET /static/images/university.png
+[2020-06-30 13:12:35 -0500] [4918] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-30 13:12:35 -0500] [4918] [DEBUG] GET /favicon.ico
+[2020-06-30 13:12:36 -0500] [4921] [DEBUG] GET /exp
+2020-06-30 13:12:36,760 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-30 13:12:36 -0500] [4918] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-30 13:12:36 -0500] [4918] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-30 13:12:36 -0500] [4924] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-30 13:12:36 -0500] [4926] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-30 13:12:36 -0500] [4918] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-30 13:12:36 -0500] [4925] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-30 13:12:36 -0500] [4918] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-30 13:12:36 -0500] [4923] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-30 13:12:36 -0500] [4918] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-30 13:12:36 -0500] [4920] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-30 13:12:36 -0500] [4923] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-30 13:12:36 -0500] [4919] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-30 13:13:14 -0500] [4923] [DEBUG] Closing connection. 
+[2020-06-30 13:13:15 -0500] [4923] [DEBUG] Closing connection. 
+[2020-06-30 13:13:15 -0500] [4920] [DEBUG] Closing connection. 
+[2020-06-30 13:13:15 -0500] [4920] [DEBUG] GET /ppid
+[2020-06-30 13:13:15 -0500] [4918] [INFO] Parent changed, shutting down: <Worker 4918>
+[2020-06-30 13:13:15 -0500] [4920] [INFO] Parent changed, shutting down: <Worker 4920>
+[2020-06-30 13:13:15 -0500] [4919] [DEBUG] Closing connection. 
+[2020-06-30 13:13:15 -0500] [4918] [INFO] Worker exiting (pid: 4918)
+[2020-06-30 13:13:15 -0500] [4920] [INFO] Worker exiting (pid: 4920)
+[2020-06-30 13:13:15 -0500] [4919] [INFO] Parent changed, shutting down: <Worker 4919>
+[2020-06-30 13:13:15 -0500] [4919] [INFO] Worker exiting (pid: 4919)
+[2020-06-30 13:13:16 -0500] [4924] [INFO] Parent changed, shutting down: <Worker 4924>
+[2020-06-30 13:13:16 -0500] [4923] [INFO] Parent changed, shutting down: <Worker 4923>
+[2020-06-30 13:13:16 -0500] [4926] [DEBUG] Closing connection. 
+[2020-06-30 13:13:16 -0500] [4924] [INFO] Worker exiting (pid: 4924)
+[2020-06-30 13:13:16 -0500] [4923] [INFO] Worker exiting (pid: 4923)
+[2020-06-30 13:13:16 -0500] [4926] [INFO] Parent changed, shutting down: <Worker 4926>
+[2020-06-30 13:13:16 -0500] [4926] [INFO] Worker exiting (pid: 4926)
+[2020-06-30 13:13:16 -0500] [4925] [INFO] Parent changed, shutting down: <Worker 4925>
+[2020-06-30 13:13:16 -0500] [4922] [INFO] Parent changed, shutting down: <Worker 4922>
+[2020-06-30 13:13:16 -0500] [4921] [DEBUG] Closing connection. 
+[2020-06-30 13:13:16 -0500] [4925] [INFO] Worker exiting (pid: 4925)
+[2020-06-30 13:13:16 -0500] [4922] [INFO] Worker exiting (pid: 4922)
+[2020-06-30 13:13:16 -0500] [4921] [INFO] Parent changed, shutting down: <Worker 4921>
+[2020-06-30 13:13:16 -0500] [4921] [INFO] Worker exiting (pid: 4921)
+[2020-06-30 13:13:21 -0500] [4989] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1100243b0>
+  on_reload: <function OnReload.on_reload at 0x1100244d0>
+  when_ready: <function WhenReady.when_ready at 0x1100245f0>
+  pre_fork: <function Prefork.pre_fork at 0x110024710>
+  post_fork: <function Postfork.post_fork at 0x110024830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x110024950>
+  worker_int: <function WorkerInt.worker_int at 0x110024a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x110024b90>
+  pre_exec: <function PreExec.pre_exec at 0x110024cb0>
+  pre_request: <function PreRequest.pre_request at 0x110024dd0>
+  post_request: <function PostRequest.post_request at 0x110024e60>
+  child_exit: <function ChildExit.child_exit at 0x110024f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1100410e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x110041200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x1100eecb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-06-30 13:13:21 -0500] [4989] [INFO] Starting gunicorn 19.9.0
+[2020-06-30 13:13:21 -0500] [4989] [DEBUG] Arbiter booted
+[2020-06-30 13:13:21 -0500] [4989] [INFO] Listening at: http://0.0.0.0:22362 (4989)
+[2020-06-30 13:13:21 -0500] [4989] [INFO] Using worker: sync
+[2020-06-30 13:13:21 -0500] [4992] [INFO] Booting worker with pid: 4992
+[2020-06-30 13:13:21 -0500] [4993] [INFO] Booting worker with pid: 4993
+[2020-06-30 13:13:21 -0500] [4994] [INFO] Booting worker with pid: 4994
+[2020-06-30 13:13:21 -0500] [4995] [INFO] Booting worker with pid: 4995
+[2020-06-30 13:13:21 -0500] [4996] [INFO] Booting worker with pid: 4996
+[2020-06-30 13:13:21 -0500] [4997] [INFO] Booting worker with pid: 4997
+[2020-06-30 13:13:21 -0500] [4998] [INFO] Booting worker with pid: 4998
+[2020-06-30 13:13:21 -0500] [4999] [INFO] Booting worker with pid: 4999
+[2020-06-30 13:13:21 -0500] [5000] [INFO] Booting worker with pid: 5000
+[2020-06-30 13:13:21 -0500] [4989] [DEBUG] 9 workers
+2020-06-30 13:13:23,059 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,089 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:13:23 -0500] [4992] [DEBUG] Closing connection. 
+2020-06-30 13:13:23,132 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,154 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:13:23,326 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,336 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:13:23,415 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,426 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,434 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:13:23,434 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:13:23 -0500] [4992] [DEBUG] GET /ad
+2020-06-30 13:13:23,447 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,468 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:13:23,475 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,483 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-06-30 13:13:23,506 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,517 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:13:23 -0500] [4993] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-30 13:13:23 -0500] [4994] [DEBUG] GET /static/images/university.png
+[2020-06-30 13:13:23 -0500] [4993] [DEBUG] GET /favicon.ico
+2020-06-30 13:13:23,632 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-06-30 13:13:23,640 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /ad
+[2020-06-30 13:13:26 -0500] [4993] [DEBUG] GET /favicon.ico
+[2020-06-30 13:13:26 -0500] [4993] [DEBUG] GET /exp
+2020-06-30 13:13:26,851 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-30 13:13:26 -0500] [4994] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-30 13:13:26 -0500] [4999] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-30 13:13:26 -0500] [4998] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-30 13:13:26 -0500] [4994] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-30 13:13:26 -0500] [4995] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-30 13:13:26 -0500] [4997] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-30 13:13:26 -0500] [4994] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-30 13:13:26 -0500] [5000] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-30 13:13:44 -0500] [4995] [DEBUG] GET /ad
+[2020-06-30 13:13:44 -0500] [5000] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-06-30 13:13:44 -0500] [4992] [DEBUG] GET /static/images/university.png
+[2020-06-30 13:13:44 -0500] [4992] [DEBUG] GET /favicon.ico
+[2020-06-30 13:13:45 -0500] [4992] [DEBUG] GET /exp
+2020-06-30 13:13:45,363 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-06-30 13:13:45 -0500] [4995] [DEBUG] GET /static/images/Jelly.jpg
+[2020-06-30 13:13:45 -0500] [4996] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-06-30 13:13:45 -0500] [4995] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-06-30 13:13:45 -0500] [4993] [DEBUG] GET /static/images/Orange.jpg
+[2020-06-30 13:13:45 -0500] [5000] [DEBUG] GET /static/images/Onion.jpg
+[2020-06-30 13:13:45 -0500] [4992] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-06-30 13:13:45 -0500] [4995] [DEBUG] GET /static/images/Crackers.jpg
+[2020-06-30 13:13:45 -0500] [4996] [DEBUG] GET /static/images/Corn.jpg
+[2020-06-30 13:13:45 -0500] [4996] [DEBUG] GET /static/images/Coke.jpg
+[2020-06-30 13:13:45 -0500] [4995] [DEBUG] GET /static/images/Cereal.jpg
+[2020-06-30 13:13:45 -0500] [4999] [DEBUG] GET /static/images/Bread.jpg
+[2020-06-30 13:13:45 -0500] [4993] [DEBUG] GET /static/images/Apple.jpg
+[2020-06-30 19:50:39 -0500] [4995] [DEBUG] Closing connection. 
+[2020-06-30 19:50:40 -0500] [4994] [DEBUG] Closing connection. 
+[2020-06-30 19:50:40 -0500] [4996] [DEBUG] Closing connection. 
+[2020-06-30 19:50:40 -0500] [4995] [DEBUG] GET /ppid
+[2020-06-30 19:50:40 -0500] [4992] [INFO] Parent changed, shutting down: <Worker 4992>
+[2020-06-30 19:50:40 -0500] [4999] [INFO] Parent changed, shutting down: <Worker 4999>
+[2020-06-30 19:50:40 -0500] [4995] [DEBUG] Closing connection. 
+[2020-06-30 19:50:40 -0500] [4999] [INFO] Worker exiting (pid: 4999)
+[2020-06-30 19:50:40 -0500] [4992] [INFO] Worker exiting (pid: 4992)
+[2020-06-30 19:50:40 -0500] [4994] [INFO] Parent changed, shutting down: <Worker 4994>
+[2020-06-30 19:50:40 -0500] [4994] [INFO] Worker exiting (pid: 4994)
+[2020-06-30 19:50:40 -0500] [4995] [INFO] Parent changed, shutting down: <Worker 4995>
+[2020-06-30 19:50:40 -0500] [4995] [INFO] Worker exiting (pid: 4995)
+[2020-06-30 19:50:40 -0500] [4998] [INFO] Parent changed, shutting down: <Worker 4998>
+[2020-06-30 19:50:40 -0500] [4996] [INFO] Parent changed, shutting down: <Worker 4996>
+[2020-06-30 19:50:40 -0500] [4997] [DEBUG] Closing connection. 
+[2020-06-30 19:50:40 -0500] [4998] [INFO] Worker exiting (pid: 4998)
+[2020-06-30 19:50:40 -0500] [4996] [INFO] Worker exiting (pid: 4996)
+[2020-06-30 19:50:40 -0500] [4997] [INFO] Parent changed, shutting down: <Worker 4997>
+[2020-06-30 19:50:40 -0500] [4997] [INFO] Worker exiting (pid: 4997)
+[2020-06-30 19:50:41 -0500] [4993] [INFO] Parent changed, shutting down: <Worker 4993>
+[2020-06-30 19:50:41 -0500] [5000] [DEBUG] Closing connection. 
+[2020-06-30 19:50:41 -0500] [4993] [INFO] Worker exiting (pid: 4993)
+[2020-06-30 19:50:41 -0500] [5000] [INFO] Parent changed, shutting down: <Worker 5000>
+[2020-06-30 19:50:41 -0500] [5000] [INFO] Worker exiting (pid: 5000)
+[2020-07-01 12:19:38 -0500] [7769] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1108403b0>
+  on_reload: <function OnReload.on_reload at 0x1108404d0>
+  when_ready: <function WhenReady.when_ready at 0x1108405f0>
+  pre_fork: <function Prefork.pre_fork at 0x110840710>
+  post_fork: <function Postfork.post_fork at 0x110840830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x110840950>
+  worker_int: <function WorkerInt.worker_int at 0x110840a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x110840b90>
+  pre_exec: <function PreExec.pre_exec at 0x110840cb0>
+  pre_request: <function PreRequest.pre_request at 0x110840dd0>
+  post_request: <function PostRequest.post_request at 0x110840e60>
+  child_exit: <function ChildExit.child_exit at 0x110840f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x11085c0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x11085c200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x11090acb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:19:38 -0500] [7769] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:19:38 -0500] [7769] [DEBUG] Arbiter booted
+[2020-07-01 12:19:38 -0500] [7769] [INFO] Listening at: http://0.0.0.0:22362 (7769)
+[2020-07-01 12:19:38 -0500] [7769] [INFO] Using worker: sync
+[2020-07-01 12:19:38 -0500] [7772] [INFO] Booting worker with pid: 7772
+[2020-07-01 12:19:38 -0500] [7773] [INFO] Booting worker with pid: 7773
+[2020-07-01 12:19:38 -0500] [7774] [INFO] Booting worker with pid: 7774
+[2020-07-01 12:19:38 -0500] [7775] [INFO] Booting worker with pid: 7775
+[2020-07-01 12:19:38 -0500] [7776] [INFO] Booting worker with pid: 7776
+[2020-07-01 12:19:38 -0500] [7777] [INFO] Booting worker with pid: 7777
+[2020-07-01 12:19:38 -0500] [7778] [INFO] Booting worker with pid: 7778
+[2020-07-01 12:19:38 -0500] [7779] [INFO] Booting worker with pid: 7779
+[2020-07-01 12:19:38 -0500] [7780] [INFO] Booting worker with pid: 7780
+[2020-07-01 12:19:38 -0500] [7769] [DEBUG] 9 workers
+2020-07-01 12:19:40,375 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,387 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:19:40 -0500] [7772] [DEBUG] Closing connection. 
+2020-07-01 12:19:40,479 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,488 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,550 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,574 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,710 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,735 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,740 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,752 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,805 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,829 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,834 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,844 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,855 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,865 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:19:40,876 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:19:40,884 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:19:43 -0500] [7780] [DEBUG] GET /ad
+[2020-07-01 12:19:43 -0500] [7778] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:19:43 -0500] [7779] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:19:43 -0500] [7778] [DEBUG] GET /favicon.ico
+[2020-07-01 12:19:44 -0500] [7778] [DEBUG] GET /exp
+2020-07-01 12:19:44,838 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:19:44 -0500] [7780] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:19:44 -0500] [7780] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:19:44 -0500] [7777] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:19:44 -0500] [7777] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:19:44 -0500] [7780] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:19:44 -0500] [7779] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:19:44 -0500] [7778] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:19:44 -0500] [7775] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:19:44 -0500] [7777] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:19:45 -0500] [7779] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:19:45 -0500] [7780] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:19:45 -0500] [7775] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:20:32 -0500] [7775] [DEBUG] Closing connection. 
+[2020-07-01 12:20:33 -0500] [7772] [DEBUG] Closing connection. 
+[2020-07-01 12:20:33 -0500] [7780] [DEBUG] Closing connection. 
+[2020-07-01 12:20:33 -0500] [7780] [DEBUG] GET /ppid
+[2020-07-01 12:20:33 -0500] [7778] [INFO] Parent changed, shutting down: <Worker 7778>
+[2020-07-01 12:20:33 -0500] [7780] [DEBUG] Closing connection. 
+[2020-07-01 12:20:33 -0500] [7779] [INFO] Parent changed, shutting down: <Worker 7779>
+[2020-07-01 12:20:33 -0500] [7777] [INFO] Parent changed, shutting down: <Worker 7777>
+[2020-07-01 12:20:33 -0500] [7778] [INFO] Worker exiting (pid: 7778)
+[2020-07-01 12:20:33 -0500] [7779] [INFO] Worker exiting (pid: 7779)
+[2020-07-01 12:20:33 -0500] [7780] [INFO] Parent changed, shutting down: <Worker 7780>
+[2020-07-01 12:20:33 -0500] [7777] [INFO] Worker exiting (pid: 7777)
+[2020-07-01 12:20:33 -0500] [7780] [INFO] Worker exiting (pid: 7780)
+[2020-07-01 12:20:34 -0500] [7772] [DEBUG] Closing connection. 
+[2020-07-01 12:20:34 -0500] [7775] [INFO] Parent changed, shutting down: <Worker 7775>
+[2020-07-01 12:20:34 -0500] [7774] [INFO] Parent changed, shutting down: <Worker 7774>
+[2020-07-01 12:20:34 -0500] [7772] [INFO] Parent changed, shutting down: <Worker 7772>
+[2020-07-01 12:20:34 -0500] [7775] [INFO] Worker exiting (pid: 7775)
+[2020-07-01 12:20:34 -0500] [7774] [INFO] Worker exiting (pid: 7774)
+[2020-07-01 12:20:34 -0500] [7772] [INFO] Worker exiting (pid: 7772)
+[2020-07-01 12:20:34 -0500] [7776] [INFO] Parent changed, shutting down: <Worker 7776>
+[2020-07-01 12:20:34 -0500] [7773] [DEBUG] Closing connection. 
+[2020-07-01 12:20:34 -0500] [7776] [INFO] Worker exiting (pid: 7776)
+[2020-07-01 12:20:34 -0500] [7773] [INFO] Parent changed, shutting down: <Worker 7773>
+[2020-07-01 12:20:34 -0500] [7773] [INFO] Worker exiting (pid: 7773)
+[2020-07-01 12:20:39 -0500] [7850] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1061783b0>
+  on_reload: <function OnReload.on_reload at 0x1061784d0>
+  when_ready: <function WhenReady.when_ready at 0x1061785f0>
+  pre_fork: <function Prefork.pre_fork at 0x106178710>
+  post_fork: <function Postfork.post_fork at 0x106178830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x106178950>
+  worker_int: <function WorkerInt.worker_int at 0x106178a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x106178b90>
+  pre_exec: <function PreExec.pre_exec at 0x106178cb0>
+  pre_request: <function PreRequest.pre_request at 0x106178dd0>
+  post_request: <function PostRequest.post_request at 0x106178e60>
+  child_exit: <function ChildExit.child_exit at 0x106178f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1061940e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x106194200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x106242cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:20:39 -0500] [7850] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:20:39 -0500] [7850] [DEBUG] Arbiter booted
+[2020-07-01 12:20:39 -0500] [7850] [INFO] Listening at: http://0.0.0.0:22362 (7850)
+[2020-07-01 12:20:39 -0500] [7850] [INFO] Using worker: sync
+[2020-07-01 12:20:39 -0500] [7853] [INFO] Booting worker with pid: 7853
+[2020-07-01 12:20:39 -0500] [7854] [INFO] Booting worker with pid: 7854
+[2020-07-01 12:20:40 -0500] [7855] [INFO] Booting worker with pid: 7855
+[2020-07-01 12:20:40 -0500] [7856] [INFO] Booting worker with pid: 7856
+[2020-07-01 12:20:40 -0500] [7857] [INFO] Booting worker with pid: 7857
+[2020-07-01 12:20:40 -0500] [7858] [INFO] Booting worker with pid: 7858
+[2020-07-01 12:20:40 -0500] [7859] [INFO] Booting worker with pid: 7859
+[2020-07-01 12:20:40 -0500] [7860] [INFO] Booting worker with pid: 7860
+[2020-07-01 12:20:40 -0500] [7861] [INFO] Booting worker with pid: 7861
+[2020-07-01 12:20:40 -0500] [7850] [DEBUG] 9 workers
+2020-07-01 12:20:41,992 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:41,999 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:20:42 -0500] [7854] [DEBUG] Closing connection. 
+2020-07-01 12:20:42,136 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,137 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,156 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,162 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,164 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,179 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,265 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,274 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,346 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,348 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,353 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,356 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,363 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,371 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:20:42,391 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:20:42,396 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:20:42 -0500] [7856] [DEBUG] GET /ad
+[2020-07-01 12:20:43 -0500] [7855] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:20:43 -0500] [7856] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:20:43 -0500] [7855] [DEBUG] GET /favicon.ico
+[2020-07-01 12:20:43 -0500] [7856] [DEBUG] GET /exp
+2020-07-01 12:20:43,933 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:20:44 -0500] [7855] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:20:44 -0500] [7857] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:20:44 -0500] [7860] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:20:44 -0500] [7855] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:20:44 -0500] [7861] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:20:44 -0500] [7853] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:20:44 -0500] [7856] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:20:44 -0500] [7856] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:20:44 -0500] [7856] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:20:44 -0500] [7854] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:20:44 -0500] [7859] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:20:44 -0500] [7856] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:20:55 -0500] [7856] [DEBUG] Closing connection. 
+[2020-07-01 12:20:55 -0500] [7856] [DEBUG] Closing connection. 
+[2020-07-01 12:20:55 -0500] [7854] [DEBUG] Closing connection. 
+[2020-07-01 12:20:55 -0500] [7861] [DEBUG] GET /ppid
+[2020-07-01 12:20:55 -0500] [7861] [INFO] Parent changed, shutting down: <Worker 7861>
+[2020-07-01 12:20:55 -0500] [7860] [INFO] Parent changed, shutting down: <Worker 7860>
+[2020-07-01 12:20:55 -0500] [7856] [DEBUG] Closing connection. 
+[2020-07-01 12:20:55 -0500] [7861] [INFO] Worker exiting (pid: 7861)
+[2020-07-01 12:20:55 -0500] [7856] [INFO] Parent changed, shutting down: <Worker 7856>
+[2020-07-01 12:20:55 -0500] [7860] [INFO] Worker exiting (pid: 7860)
+[2020-07-01 12:20:55 -0500] [7856] [INFO] Worker exiting (pid: 7856)
+[2020-07-01 12:20:56 -0500] [7854] [INFO] Parent changed, shutting down: <Worker 7854>
+[2020-07-01 12:20:56 -0500] [7858] [INFO] Parent changed, shutting down: <Worker 7858>
+[2020-07-01 12:20:56 -0500] [7855] [DEBUG] Closing connection. 
+[2020-07-01 12:20:56 -0500] [7854] [INFO] Worker exiting (pid: 7854)
+[2020-07-01 12:20:56 -0500] [7858] [INFO] Worker exiting (pid: 7858)
+[2020-07-01 12:20:56 -0500] [7855] [INFO] Parent changed, shutting down: <Worker 7855>
+[2020-07-01 12:20:56 -0500] [7855] [INFO] Worker exiting (pid: 7855)
+[2020-07-01 12:20:57 -0500] [7859] [INFO] Parent changed, shutting down: <Worker 7859>
+[2020-07-01 12:20:57 -0500] [7857] [INFO] Parent changed, shutting down: <Worker 7857>
+[2020-07-01 12:20:57 -0500] [7853] [DEBUG] Closing connection. 
+[2020-07-01 12:20:57 -0500] [7859] [INFO] Worker exiting (pid: 7859)
+[2020-07-01 12:20:57 -0500] [7857] [INFO] Worker exiting (pid: 7857)
+[2020-07-01 12:20:57 -0500] [7853] [INFO] Parent changed, shutting down: <Worker 7853>
+[2020-07-01 12:20:57 -0500] [7853] [INFO] Worker exiting (pid: 7853)
+[2020-07-01 12:24:05 -0500] [7940] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1028203b0>
+  on_reload: <function OnReload.on_reload at 0x1028204d0>
+  when_ready: <function WhenReady.when_ready at 0x1028205f0>
+  pre_fork: <function Prefork.pre_fork at 0x102820710>
+  post_fork: <function Postfork.post_fork at 0x102820830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x102820950>
+  worker_int: <function WorkerInt.worker_int at 0x102820a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x102820b90>
+  pre_exec: <function PreExec.pre_exec at 0x102820cb0>
+  pre_request: <function PreRequest.pre_request at 0x102820dd0>
+  post_request: <function PostRequest.post_request at 0x102820e60>
+  child_exit: <function ChildExit.child_exit at 0x102820f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10283c0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10283c200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x1028eacb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:24:05 -0500] [7940] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:24:05 -0500] [7940] [DEBUG] Arbiter booted
+[2020-07-01 12:24:05 -0500] [7940] [INFO] Listening at: http://0.0.0.0:22362 (7940)
+[2020-07-01 12:24:05 -0500] [7940] [INFO] Using worker: sync
+[2020-07-01 12:24:05 -0500] [7943] [INFO] Booting worker with pid: 7943
+[2020-07-01 12:24:05 -0500] [7944] [INFO] Booting worker with pid: 7944
+[2020-07-01 12:24:05 -0500] [7945] [INFO] Booting worker with pid: 7945
+[2020-07-01 12:24:06 -0500] [7946] [INFO] Booting worker with pid: 7946
+[2020-07-01 12:24:06 -0500] [7947] [INFO] Booting worker with pid: 7947
+[2020-07-01 12:24:06 -0500] [7948] [INFO] Booting worker with pid: 7948
+[2020-07-01 12:24:06 -0500] [7949] [INFO] Booting worker with pid: 7949
+[2020-07-01 12:24:06 -0500] [7950] [INFO] Booting worker with pid: 7950
+[2020-07-01 12:24:06 -0500] [7951] [INFO] Booting worker with pid: 7951
+[2020-07-01 12:24:06 -0500] [7940] [DEBUG] 9 workers
+2020-07-01 12:24:07,600 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:07,630 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:07,669 Secret key: 'this is my secret key which is hard to guess, i should change this'
+[2020-07-01 12:24:07 -0500] [7943] [DEBUG] Closing connection. 
+2020-07-01 12:24:07,677 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,013 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,048 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,287 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,304 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,309 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,318 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,306 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,321 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,328 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,328 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,330 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,332 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:24:08,336 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:24:08,342 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:24:09 -0500] [7948] [DEBUG] GET /ad
+[2020-07-01 12:24:09 -0500] [7948] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:24:09 -0500] [7951] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:24:09 -0500] [7951] [DEBUG] GET /favicon.ico
+[2020-07-01 12:24:10 -0500] [7943] [DEBUG] GET /exp
+2020-07-01 12:24:10,972 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:24:11 -0500] [7951] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:24:11 -0500] [7951] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:24:11 -0500] [7944] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:24:11 -0500] [7943] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:24:11 -0500] [7948] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:24:11 -0500] [7947] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:24:11 -0500] [7950] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:24:11 -0500] [7947] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:24:11 -0500] [7946] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:24:11 -0500] [7948] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:24:11 -0500] [7945] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:24:11 -0500] [7951] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:26:07 -0500] [7945] [DEBUG] Closing connection. 
+[2020-07-01 12:26:09 -0500] [7943] [DEBUG] Closing connection. 
+[2020-07-01 12:26:10 -0500] [7948] [DEBUG] Closing connection. 
+[2020-07-01 12:26:10 -0500] [7947] [DEBUG] Closing connection. 
+[2020-07-01 12:26:10 -0500] [7943] [DEBUG] GET /ppid
+[2020-07-01 12:26:10 -0500] [7943] [INFO] Parent changed, shutting down: <Worker 7943>
+[2020-07-01 12:26:10 -0500] [7947] [DEBUG] Closing connection. 
+[2020-07-01 12:26:10 -0500] [7943] [INFO] Worker exiting (pid: 7943)
+[2020-07-01 12:26:10 -0500] [7947] [INFO] Parent changed, shutting down: <Worker 7947>
+[2020-07-01 12:26:10 -0500] [7947] [INFO] Worker exiting (pid: 7947)
+[2020-07-01 12:26:10 -0500] [7949] [INFO] Parent changed, shutting down: <Worker 7949>
+[2020-07-01 12:26:10 -0500] [7951] [INFO] Parent changed, shutting down: <Worker 7951>
+[2020-07-01 12:26:10 -0500] [7946] [DEBUG] Closing connection. 
+[2020-07-01 12:26:10 -0500] [7949] [INFO] Worker exiting (pid: 7949)
+[2020-07-01 12:26:10 -0500] [7951] [INFO] Worker exiting (pid: 7951)
+[2020-07-01 12:26:10 -0500] [7946] [INFO] Parent changed, shutting down: <Worker 7946>
+[2020-07-01 12:26:10 -0500] [7946] [INFO] Worker exiting (pid: 7946)
+[2020-07-01 12:26:11 -0500] [7950] [INFO] Parent changed, shutting down: <Worker 7950>
+[2020-07-01 12:26:11 -0500] [7950] [INFO] Worker exiting (pid: 7950)
+[2020-07-01 12:26:11 -0500] [7945] [DEBUG] Closing connection. 
+[2020-07-01 12:26:11 -0500] [7944] [INFO] Parent changed, shutting down: <Worker 7944>
+[2020-07-01 12:26:11 -0500] [7948] [INFO] Parent changed, shutting down: <Worker 7948>
+[2020-07-01 12:26:11 -0500] [7944] [INFO] Worker exiting (pid: 7944)
+[2020-07-01 12:26:11 -0500] [7948] [INFO] Worker exiting (pid: 7948)
+[2020-07-01 12:26:11 -0500] [7945] [INFO] Parent changed, shutting down: <Worker 7945>
+[2020-07-01 12:26:11 -0500] [7945] [INFO] Worker exiting (pid: 7945)
+[2020-07-01 12:26:17 -0500] [8061] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x105ed23b0>
+  on_reload: <function OnReload.on_reload at 0x105ed24d0>
+  when_ready: <function WhenReady.when_ready at 0x105ed25f0>
+  pre_fork: <function Prefork.pre_fork at 0x105ed2710>
+  post_fork: <function Postfork.post_fork at 0x105ed2830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x105ed2950>
+  worker_int: <function WorkerInt.worker_int at 0x105ed2a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x105ed2b90>
+  pre_exec: <function PreExec.pre_exec at 0x105ed2cb0>
+  pre_request: <function PreRequest.pre_request at 0x105ed2dd0>
+  post_request: <function PostRequest.post_request at 0x105ed2e60>
+  child_exit: <function ChildExit.child_exit at 0x105ed2f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x105eee0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x105eee200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x105f9ccb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:26:17 -0500] [8061] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:26:17 -0500] [8061] [DEBUG] Arbiter booted
+[2020-07-01 12:26:17 -0500] [8061] [INFO] Listening at: http://0.0.0.0:22362 (8061)
+[2020-07-01 12:26:17 -0500] [8061] [INFO] Using worker: sync
+[2020-07-01 12:26:17 -0500] [8064] [INFO] Booting worker with pid: 8064
+[2020-07-01 12:26:17 -0500] [8065] [INFO] Booting worker with pid: 8065
+[2020-07-01 12:26:17 -0500] [8066] [INFO] Booting worker with pid: 8066
+[2020-07-01 12:26:17 -0500] [8067] [INFO] Booting worker with pid: 8067
+[2020-07-01 12:26:17 -0500] [8068] [INFO] Booting worker with pid: 8068
+[2020-07-01 12:26:17 -0500] [8069] [INFO] Booting worker with pid: 8069
+[2020-07-01 12:26:17 -0500] [8070] [INFO] Booting worker with pid: 8070
+[2020-07-01 12:26:17 -0500] [8071] [INFO] Booting worker with pid: 8071
+[2020-07-01 12:26:17 -0500] [8072] [INFO] Booting worker with pid: 8072
+[2020-07-01 12:26:17 -0500] [8061] [DEBUG] 9 workers
+2020-07-01 12:26:19,320 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:19,339 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:26:19 -0500] [8064] [DEBUG] Closing connection. 
+2020-07-01 12:26:19,504 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:19,519 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:26:19,797 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:19,816 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:26:19 -0500] [8064] [DEBUG] GET /ad
+2020-07-01 12:26:20,040 Secret key: 'this is my secret key which is hard to guess, i should change this'
+[2020-07-01 12:26:20 -0500] [8065] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:26:20 -0500] [8066] [DEBUG] GET /static/css/bootstrap.min.css
+2020-07-01 12:26:20,128 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:26:20 -0500] [8065] [DEBUG] GET /favicon.ico
+2020-07-01 12:26:20,295 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:20,304 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:26:20,312 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:20,314 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:20,317 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:20,324 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:26:20,330 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:26:20,331 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:26:20,348 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:26:20,353 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:26:20 -0500] [8065] [DEBUG] GET /exp
+2020-07-01 12:26:20,865 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:26:20 -0500] [8067] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:26:20 -0500] [8066] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:26:20 -0500] [8064] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:26:20 -0500] [8067] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:26:20 -0500] [8067] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:26:20 -0500] [8066] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:26:20 -0500] [8065] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:26:20 -0500] [8067] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:26:20 -0500] [8064] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:26:20 -0500] [8065] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:26:20 -0500] [8067] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:26:20 -0500] [8066] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:26:27 -0500] [8072] [DEBUG] Closing connection. 
+[2020-07-01 12:26:29 -0500] [8067] [DEBUG] Closing connection. 
+[2020-07-01 12:26:29 -0500] [8072] [DEBUG] Closing connection. 
+[2020-07-01 12:26:29 -0500] [8072] [DEBUG] GET /ppid
+[2020-07-01 12:26:29 -0500] [8069] [INFO] Parent changed, shutting down: <Worker 8069>
+[2020-07-01 12:26:29 -0500] [8072] [DEBUG] Closing connection. 
+[2020-07-01 12:26:29 -0500] [8067] [INFO] Parent changed, shutting down: <Worker 8067>
+[2020-07-01 12:26:29 -0500] [8069] [INFO] Worker exiting (pid: 8069)
+[2020-07-01 12:26:29 -0500] [8072] [INFO] Parent changed, shutting down: <Worker 8072>
+[2020-07-01 12:26:29 -0500] [8067] [INFO] Worker exiting (pid: 8067)
+[2020-07-01 12:26:29 -0500] [8072] [INFO] Worker exiting (pid: 8072)
+[2020-07-01 12:26:29 -0500] [8064] [DEBUG] Closing connection. 
+[2020-07-01 12:26:29 -0500] [8064] [INFO] Parent changed, shutting down: <Worker 8064>
+[2020-07-01 12:26:29 -0500] [8064] [INFO] Worker exiting (pid: 8064)
+[2020-07-01 12:26:30 -0500] [8066] [INFO] Parent changed, shutting down: <Worker 8066>
+[2020-07-01 12:26:30 -0500] [8065] [INFO] Parent changed, shutting down: <Worker 8065>
+[2020-07-01 12:26:30 -0500] [8070] [DEBUG] Closing connection. 
+[2020-07-01 12:26:30 -0500] [8071] [INFO] Parent changed, shutting down: <Worker 8071>
+[2020-07-01 12:26:30 -0500] [8066] [INFO] Worker exiting (pid: 8066)
+[2020-07-01 12:26:30 -0500] [8068] [INFO] Parent changed, shutting down: <Worker 8068>
+[2020-07-01 12:26:30 -0500] [8071] [INFO] Worker exiting (pid: 8071)
+[2020-07-01 12:26:30 -0500] [8070] [INFO] Parent changed, shutting down: <Worker 8070>
+[2020-07-01 12:26:30 -0500] [8068] [INFO] Worker exiting (pid: 8068)
+[2020-07-01 12:26:30 -0500] [8065] [INFO] Worker exiting (pid: 8065)
+[2020-07-01 12:26:30 -0500] [8070] [INFO] Worker exiting (pid: 8070)
+[2020-07-01 12:30:21 -0500] [8149] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10d1283b0>
+  on_reload: <function OnReload.on_reload at 0x10d1284d0>
+  when_ready: <function WhenReady.when_ready at 0x10d1285f0>
+  pre_fork: <function Prefork.pre_fork at 0x10d128710>
+  post_fork: <function Postfork.post_fork at 0x10d128830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10d128950>
+  worker_int: <function WorkerInt.worker_int at 0x10d128a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10d128b90>
+  pre_exec: <function PreExec.pre_exec at 0x10d128cb0>
+  pre_request: <function PreRequest.pre_request at 0x10d128dd0>
+  post_request: <function PostRequest.post_request at 0x10d128e60>
+  child_exit: <function ChildExit.child_exit at 0x10d128f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x10d1440e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10d144200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x10d1f2cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:30:21 -0500] [8149] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:30:21 -0500] [8149] [DEBUG] Arbiter booted
+[2020-07-01 12:30:21 -0500] [8149] [INFO] Listening at: http://0.0.0.0:22362 (8149)
+[2020-07-01 12:30:21 -0500] [8149] [INFO] Using worker: sync
+[2020-07-01 12:30:21 -0500] [8152] [INFO] Booting worker with pid: 8152
+[2020-07-01 12:30:21 -0500] [8153] [INFO] Booting worker with pid: 8153
+[2020-07-01 12:30:21 -0500] [8154] [INFO] Booting worker with pid: 8154
+[2020-07-01 12:30:21 -0500] [8155] [INFO] Booting worker with pid: 8155
+[2020-07-01 12:30:21 -0500] [8156] [INFO] Booting worker with pid: 8156
+[2020-07-01 12:30:21 -0500] [8157] [INFO] Booting worker with pid: 8157
+[2020-07-01 12:30:21 -0500] [8158] [INFO] Booting worker with pid: 8158
+[2020-07-01 12:30:22 -0500] [8159] [INFO] Booting worker with pid: 8159
+[2020-07-01 12:30:22 -0500] [8160] [INFO] Booting worker with pid: 8160
+[2020-07-01 12:30:22 -0500] [8149] [DEBUG] 9 workers
+2020-07-01 12:30:23,073 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:23,095 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:30:23 -0500] [8152] [DEBUG] Closing connection. 
+2020-07-01 12:30:23,397 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:23,407 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:23,754 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:23,763 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:23,895 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:23,929 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:24,117 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:24,133 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:24,147 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:24,162 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:24,163 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:24,164 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:24,172 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:24,172 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:24,177 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:24,186 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:30:24 -0500] [8153] [DEBUG] GET /ad
+[2020-07-01 12:30:24 -0500] [8152] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:30:24 -0500] [8153] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:30:24 -0500] [8152] [DEBUG] GET /favicon.ico
+[2020-07-01 12:30:24 -0500] [8153] [DEBUG] GET /exp
+2020-07-01 12:30:24,913 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:30:25 -0500] [8152] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:30:25 -0500] [8152] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:30:25 -0500] [8155] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:30:25 -0500] [8154] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:30:25 -0500] [8156] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:30:25 -0500] [8152] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:30:25 -0500] [8153] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:30:25 -0500] [8156] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:30:25 -0500] [8154] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:30:25 -0500] [8155] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:30:25 -0500] [8155] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:30:25 -0500] [8153] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:30:49 -0500] [8152] [DEBUG] Closing connection. 
+[2020-07-01 12:30:51 -0500] [8152] [DEBUG] Closing connection. 
+[2020-07-01 12:30:51 -0500] [8153] [DEBUG] Closing connection. 
+[2020-07-01 12:30:51 -0500] [8152] [DEBUG] GET /ppid
+[2020-07-01 12:30:51 -0500] [8152] [INFO] Parent changed, shutting down: <Worker 8152>
+[2020-07-01 12:30:51 -0500] [8156] [DEBUG] Closing connection. 
+[2020-07-01 12:30:51 -0500] [8154] [INFO] Parent changed, shutting down: <Worker 8154>
+[2020-07-01 12:30:51 -0500] [8156] [INFO] Parent changed, shutting down: <Worker 8156>
+[2020-07-01 12:30:51 -0500] [8154] [INFO] Worker exiting (pid: 8154)
+[2020-07-01 12:30:51 -0500] [8152] [INFO] Worker exiting (pid: 8152)
+[2020-07-01 12:30:51 -0500] [8155] [INFO] Parent changed, shutting down: <Worker 8155>
+[2020-07-01 12:30:51 -0500] [8156] [INFO] Worker exiting (pid: 8156)
+[2020-07-01 12:30:51 -0500] [8155] [INFO] Worker exiting (pid: 8155)
+[2020-07-01 12:30:52 -0500] [8157] [INFO] Parent changed, shutting down: <Worker 8157>
+[2020-07-01 12:30:52 -0500] [8153] [INFO] Parent changed, shutting down: <Worker 8153>
+[2020-07-01 12:30:52 -0500] [8159] [DEBUG] Closing connection. 
+[2020-07-01 12:30:52 -0500] [8157] [INFO] Worker exiting (pid: 8157)
+[2020-07-01 12:30:52 -0500] [8153] [INFO] Worker exiting (pid: 8153)
+[2020-07-01 12:30:52 -0500] [8159] [INFO] Parent changed, shutting down: <Worker 8159>
+[2020-07-01 12:30:52 -0500] [8159] [INFO] Worker exiting (pid: 8159)
+[2020-07-01 12:30:52 -0500] [8158] [INFO] Parent changed, shutting down: <Worker 8158>
+[2020-07-01 12:30:52 -0500] [8160] [DEBUG] Closing connection. 
+[2020-07-01 12:30:52 -0500] [8158] [INFO] Worker exiting (pid: 8158)
+[2020-07-01 12:30:52 -0500] [8160] [INFO] Parent changed, shutting down: <Worker 8160>
+[2020-07-01 12:30:52 -0500] [8160] [INFO] Worker exiting (pid: 8160)
+[2020-07-01 12:30:55 -0500] [8226] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x106cb23b0>
+  on_reload: <function OnReload.on_reload at 0x106cb24d0>
+  when_ready: <function WhenReady.when_ready at 0x106cb25f0>
+  pre_fork: <function Prefork.pre_fork at 0x106cb2710>
+  post_fork: <function Postfork.post_fork at 0x106cb2830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x106cb2950>
+  worker_int: <function WorkerInt.worker_int at 0x106cb2a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x106cb2b90>
+  pre_exec: <function PreExec.pre_exec at 0x106cb2cb0>
+  pre_request: <function PreRequest.pre_request at 0x106cb2dd0>
+  post_request: <function PostRequest.post_request at 0x106cb2e60>
+  child_exit: <function ChildExit.child_exit at 0x106cb2f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x106cce0e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x106cce200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x106d7ccb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:30:55 -0500] [8226] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:30:55 -0500] [8226] [DEBUG] Arbiter booted
+[2020-07-01 12:30:55 -0500] [8226] [INFO] Listening at: http://0.0.0.0:22362 (8226)
+[2020-07-01 12:30:55 -0500] [8226] [INFO] Using worker: sync
+[2020-07-01 12:30:55 -0500] [8229] [INFO] Booting worker with pid: 8229
+[2020-07-01 12:30:55 -0500] [8230] [INFO] Booting worker with pid: 8230
+[2020-07-01 12:30:56 -0500] [8231] [INFO] Booting worker with pid: 8231
+[2020-07-01 12:30:56 -0500] [8232] [INFO] Booting worker with pid: 8232
+[2020-07-01 12:30:56 -0500] [8233] [INFO] Booting worker with pid: 8233
+[2020-07-01 12:30:56 -0500] [8234] [INFO] Booting worker with pid: 8234
+[2020-07-01 12:30:56 -0500] [8235] [INFO] Booting worker with pid: 8235
+[2020-07-01 12:30:56 -0500] [8236] [INFO] Booting worker with pid: 8236
+[2020-07-01 12:30:56 -0500] [8237] [INFO] Booting worker with pid: 8237
+[2020-07-01 12:30:56 -0500] [8226] [DEBUG] 9 workers
+2020-07-01 12:30:57,555 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:57,578 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:30:57 -0500] [8229] [DEBUG] Closing connection. 
+2020-07-01 12:30:57,918 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:57,940 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,096 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,106 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,119 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,130 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,213 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,222 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,247 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,255 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,269 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,272 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,278 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,281 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:30:58,305 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:30:58,309 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /ad
+[2020-07-01 12:31:00 -0500] [8237] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:31:00 -0500] [8229] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:31:00 -0500] [8237] [DEBUG] GET /favicon.ico
+[2020-07-01 12:31:00 -0500] [8237] [DEBUG] GET /exp
+2020-07-01 12:31:00,601 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:31:00 -0500] [8230] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:31:00 -0500] [8232] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:31:00 -0500] [8231] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:31:00 -0500] [8233] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:31:00 -0500] [8235] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:31:00 -0500] [8233] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:31:00 -0500] [8233] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:31:00 -0500] [8236] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:34:48 -0500] [8229] [DEBUG] Closing connection. 
+[2020-07-01 12:34:49 -0500] [8229] [DEBUG] Closing connection. 
+[2020-07-01 12:34:49 -0500] [8236] [DEBUG] Closing connection. 
+[2020-07-01 12:34:49 -0500] [8236] [DEBUG] GET /ppid
+[2020-07-01 12:34:49 -0500] [8235] [INFO] Parent changed, shutting down: <Worker 8235>
+[2020-07-01 12:34:49 -0500] [8230] [INFO] Parent changed, shutting down: <Worker 8230>
+[2020-07-01 12:34:49 -0500] [8234] [DEBUG] Closing connection. 
+[2020-07-01 12:34:49 -0500] [8236] [INFO] Parent changed, shutting down: <Worker 8236>
+[2020-07-01 12:34:49 -0500] [8235] [INFO] Worker exiting (pid: 8235)
+[2020-07-01 12:34:49 -0500] [8230] [INFO] Worker exiting (pid: 8230)
+[2020-07-01 12:34:49 -0500] [8234] [INFO] Parent changed, shutting down: <Worker 8234>
+[2020-07-01 12:34:49 -0500] [8236] [INFO] Worker exiting (pid: 8236)
+[2020-07-01 12:34:49 -0500] [8234] [INFO] Worker exiting (pid: 8234)
+[2020-07-01 12:34:49 -0500] [8237] [INFO] Parent changed, shutting down: <Worker 8237>
+[2020-07-01 12:34:49 -0500] [8229] [DEBUG] Closing connection. 
+[2020-07-01 12:34:49 -0500] [8232] [INFO] Parent changed, shutting down: <Worker 8232>
+[2020-07-01 12:34:49 -0500] [8237] [INFO] Worker exiting (pid: 8237)
+[2020-07-01 12:34:49 -0500] [8229] [INFO] Parent changed, shutting down: <Worker 8229>
+[2020-07-01 12:34:49 -0500] [8232] [INFO] Worker exiting (pid: 8232)
+[2020-07-01 12:34:49 -0500] [8229] [INFO] Worker exiting (pid: 8229)
+[2020-07-01 12:34:50 -0500] [8233] [INFO] Parent changed, shutting down: <Worker 8233>
+[2020-07-01 12:34:50 -0500] [8231] [DEBUG] Closing connection. 
+[2020-07-01 12:34:50 -0500] [8233] [INFO] Worker exiting (pid: 8233)
+[2020-07-01 12:34:50 -0500] [8231] [INFO] Parent changed, shutting down: <Worker 8231>
+[2020-07-01 12:34:50 -0500] [8231] [INFO] Worker exiting (pid: 8231)
+[2020-07-01 12:34:55 -0500] [8427] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10658a3b0>
+  on_reload: <function OnReload.on_reload at 0x10658a4d0>
+  when_ready: <function WhenReady.when_ready at 0x10658a5f0>
+  pre_fork: <function Prefork.pre_fork at 0x10658a710>
+  post_fork: <function Postfork.post_fork at 0x10658a830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10658a950>
+  worker_int: <function WorkerInt.worker_int at 0x10658aa70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10658ab90>
+  pre_exec: <function PreExec.pre_exec at 0x10658acb0>
+  pre_request: <function PreRequest.pre_request at 0x10658add0>
+  post_request: <function PostRequest.post_request at 0x10658ae60>
+  child_exit: <function ChildExit.child_exit at 0x10658af80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1065a70e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1065a7200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x106654cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:34:55 -0500] [8427] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:34:55 -0500] [8427] [DEBUG] Arbiter booted
+[2020-07-01 12:34:55 -0500] [8427] [INFO] Listening at: http://0.0.0.0:22362 (8427)
+[2020-07-01 12:34:55 -0500] [8427] [INFO] Using worker: sync
+[2020-07-01 12:34:55 -0500] [8430] [INFO] Booting worker with pid: 8430
+[2020-07-01 12:34:55 -0500] [8431] [INFO] Booting worker with pid: 8431
+[2020-07-01 12:34:55 -0500] [8432] [INFO] Booting worker with pid: 8432
+[2020-07-01 12:34:55 -0500] [8433] [INFO] Booting worker with pid: 8433
+[2020-07-01 12:34:55 -0500] [8434] [INFO] Booting worker with pid: 8434
+[2020-07-01 12:34:55 -0500] [8435] [INFO] Booting worker with pid: 8435
+[2020-07-01 12:34:55 -0500] [8436] [INFO] Booting worker with pid: 8436
+[2020-07-01 12:34:55 -0500] [8437] [INFO] Booting worker with pid: 8437
+[2020-07-01 12:34:55 -0500] [8438] [INFO] Booting worker with pid: 8438
+[2020-07-01 12:34:55 -0500] [8427] [DEBUG] 9 workers
+2020-07-01 12:34:57,172 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,198 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:34:57 -0500] [8430] [DEBUG] Closing connection. 
+2020-07-01 12:34:57,671 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,684 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:57,752 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,769 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:57,875 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,893 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:57,950 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,967 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:57,977 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,981 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:57,985 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:57,989 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:58,009 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:58,016 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:34:58,025 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:34:58,030 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:34:58 -0500] [8430] [DEBUG] GET /ad
+[2020-07-01 12:34:58 -0500] [8430] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:34:58 -0500] [8431] [DEBUG] GET /static/images/university.png
+[2020-07-01 12:34:58 -0500] [8433] [DEBUG] GET /favicon.ico
+[2020-07-01 12:34:59 -0500] [8437] [DEBUG] GET /ad
+[2020-07-01 12:34:59 -0500] [8435] [DEBUG] GET /favicon.ico
+[2020-07-01 12:35:00 -0500] [8433] [DEBUG] GET /exp
+2020-07-01 12:35:00,101 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:35:00 -0500] [8437] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:35:00 -0500] [8437] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:35:00 -0500] [8430] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:35:00 -0500] [8433] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:35:00 -0500] [8437] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:35:00 -0500] [8431] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:35:00 -0500] [8438] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:35:00 -0500] [8431] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:35:00 -0500] [8430] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:35:00 -0500] [8436] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:35:00 -0500] [8430] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:35:00 -0500] [8436] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:35:22 -0500] [8432] [DEBUG] Closing connection. 
+[2020-07-01 12:35:22 -0500] [8437] [DEBUG] Closing connection. 
+[2020-07-01 12:35:22 -0500] [8435] [DEBUG] Closing connection. 
+[2020-07-01 12:35:22 -0500] [8435] [DEBUG] GET /ppid
+[2020-07-01 12:35:22 -0500] [8435] [INFO] Parent changed, shutting down: <Worker 8435>
+[2020-07-01 12:35:22 -0500] [8437] [DEBUG] Closing connection. 
+[2020-07-01 12:35:22 -0500] [8436] [INFO] Parent changed, shutting down: <Worker 8436>
+[2020-07-01 12:35:22 -0500] [8435] [INFO] Worker exiting (pid: 8435)
+[2020-07-01 12:35:22 -0500] [8437] [INFO] Parent changed, shutting down: <Worker 8437>
+[2020-07-01 12:35:22 -0500] [8436] [INFO] Worker exiting (pid: 8436)
+[2020-07-01 12:35:22 -0500] [8437] [INFO] Worker exiting (pid: 8437)
+[2020-07-01 12:35:23 -0500] [8434] [INFO] Parent changed, shutting down: <Worker 8434>
+[2020-07-01 12:35:23 -0500] [8432] [INFO] Parent changed, shutting down: <Worker 8432>
+[2020-07-01 12:35:23 -0500] [8433] [DEBUG] Closing connection. 
+[2020-07-01 12:35:23 -0500] [8434] [INFO] Worker exiting (pid: 8434)
+[2020-07-01 12:35:23 -0500] [8432] [INFO] Worker exiting (pid: 8432)
+[2020-07-01 12:35:23 -0500] [8433] [INFO] Parent changed, shutting down: <Worker 8433>
+[2020-07-01 12:35:23 -0500] [8433] [INFO] Worker exiting (pid: 8433)
+[2020-07-01 12:35:23 -0500] [8431] [INFO] Parent changed, shutting down: <Worker 8431>
+[2020-07-01 12:35:23 -0500] [8430] [INFO] Parent changed, shutting down: <Worker 8430>
+[2020-07-01 12:35:23 -0500] [8438] [DEBUG] Closing connection. 
+[2020-07-01 12:35:23 -0500] [8431] [INFO] Worker exiting (pid: 8431)
+[2020-07-01 12:35:23 -0500] [8430] [INFO] Worker exiting (pid: 8430)
+[2020-07-01 12:35:23 -0500] [8438] [INFO] Parent changed, shutting down: <Worker 8438>
+[2020-07-01 12:35:23 -0500] [8438] [INFO] Worker exiting (pid: 8438)
+[2020-07-01 12:35:33 -0500] [8505] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:22362']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/wlee2019/Downloads/psiturk/object-placement-mturk
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: server.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: psiturk_experiment_server_b12933ffbd61
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1095773b0>
+  on_reload: <function OnReload.on_reload at 0x1095774d0>
+  when_ready: <function WhenReady.when_ready at 0x1095775f0>
+  pre_fork: <function Prefork.pre_fork at 0x109577710>
+  post_fork: <function Postfork.post_fork at 0x109577830>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x109577950>
+  worker_int: <function WorkerInt.worker_int at 0x109577a70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x109577b90>
+  pre_exec: <function PreExec.pre_exec at 0x109577cb0>
+  pre_request: <function PreRequest.pre_request at 0x109577dd0>
+  post_request: <function PostRequest.post_request at 0x109577e60>
+  child_exit: <function ChildExit.child_exit at 0x109577f80>
+  worker_exit: <function WorkerExit.worker_exit at 0x1095940e0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x109594200>
+  on_exit: <function ExperimentServer.load_user_config.<locals>.on_exit at 0x109641cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2020-07-01 12:35:33 -0500] [8505] [INFO] Starting gunicorn 19.9.0
+[2020-07-01 12:35:33 -0500] [8505] [DEBUG] Arbiter booted
+[2020-07-01 12:35:33 -0500] [8505] [INFO] Listening at: http://0.0.0.0:22362 (8505)
+[2020-07-01 12:35:33 -0500] [8505] [INFO] Using worker: sync
+[2020-07-01 12:35:33 -0500] [8508] [INFO] Booting worker with pid: 8508
+[2020-07-01 12:35:33 -0500] [8509] [INFO] Booting worker with pid: 8509
+[2020-07-01 12:35:33 -0500] [8510] [INFO] Booting worker with pid: 8510
+[2020-07-01 12:35:33 -0500] [8511] [INFO] Booting worker with pid: 8511
+[2020-07-01 12:35:33 -0500] [8512] [INFO] Booting worker with pid: 8512
+[2020-07-01 12:35:33 -0500] [8513] [INFO] Booting worker with pid: 8513
+[2020-07-01 12:35:33 -0500] [8514] [INFO] Booting worker with pid: 8514
+[2020-07-01 12:35:33 -0500] [8515] [INFO] Booting worker with pid: 8515
+[2020-07-01 12:35:33 -0500] [8516] [INFO] Booting worker with pid: 8516
+[2020-07-01 12:35:33 -0500] [8505] [DEBUG] 9 workers
+2020-07-01 12:35:35,036 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,050 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:35:35 -0500] [8508] [DEBUG] Closing connection. 
+[2020-07-01 12:35:35 -0500] [8508] [DEBUG] GET /ad
+[2020-07-01 12:35:35 -0500] [8508] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-07-01 12:35:35 -0500] [8508] [DEBUG] GET /static/images/university.png
+2020-07-01 12:35:35,493 Secret key: 'this is my secret key which is hard to guess, i should change this'
+[2020-07-01 12:35:35 -0500] [8508] [DEBUG] GET /favicon.ico
+2020-07-01 12:35:35,520 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,535 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,552 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,629 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,641 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,649 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,660 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,665 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,669 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,720 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,731 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,733 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,743 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+2020-07-01 12:35:35,774 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2020-07-01 12:35:35,779 /usr/local/lib/python3.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2020-07-01 12:35:36 -0500] [8509] [DEBUG] GET /ad
+[2020-07-01 12:35:36 -0500] [8510] [DEBUG] GET /favicon.ico
+[2020-07-01 12:35:36 -0500] [8515] [DEBUG] GET /exp
+2020-07-01 12:35:36,823 Accessing /exp: debugV9MEHT debugA7F9RK debugETJYMD 
+[2020-07-01 12:35:36 -0500] [8509] [DEBUG] GET /static/images/Jelly.jpg
+[2020-07-01 12:35:36 -0500] [8509] [DEBUG] GET /static/images/Potato%20Chips.jpg
+[2020-07-01 12:35:36 -0500] [8508] [DEBUG] GET /static/images/Orange.jpg
+[2020-07-01 12:35:36 -0500] [8512] [DEBUG] GET /static/images/Onion.jpg
+[2020-07-01 12:35:36 -0500] [8513] [DEBUG] GET /static/images/Grape%20Juice.jpg
+[2020-07-01 12:35:36 -0500] [8515] [DEBUG] GET /static/images/Orange%20Juice.jpg
+[2020-07-01 12:35:36 -0500] [8515] [DEBUG] GET /static/images/Crackers.jpg
+[2020-07-01 12:35:37 -0500] [8512] [DEBUG] GET /static/images/Corn.jpg
+[2020-07-01 12:35:37 -0500] [8511] [DEBUG] GET /static/images/Coke.jpg
+[2020-07-01 12:35:37 -0500] [8513] [DEBUG] GET /static/images/Cereal.jpg
+[2020-07-01 12:35:37 -0500] [8508] [DEBUG] GET /static/images/Bread.jpg
+[2020-07-01 12:35:37 -0500] [8516] [DEBUG] GET /static/images/Apple.jpg
+[2020-07-01 12:35:41 -0500] [8511] [DEBUG] Closing connection. 
+[2020-07-01 12:35:42 -0500] [8514] [DEBUG] Closing connection. 
+[2020-07-01 12:35:42 -0500] [8508] [DEBUG] Closing connection. 
+[2020-07-01 12:35:42 -0500] [8514] [DEBUG] GET /ppid
+[2020-07-01 12:35:42 -0500] [8515] [DEBUG] Closing connection. 
+[2020-07-01 12:35:42 -0500] [8509] [INFO] Parent changed, shutting down: <Worker 8509>
+[2020-07-01 12:35:42 -0500] [8516] [INFO] Parent changed, shutting down: <Worker 8516>
+[2020-07-01 12:35:42 -0500] [8514] [INFO] Parent changed, shutting down: <Worker 8514>
+[2020-07-01 12:35:42 -0500] [8515] [INFO] Parent changed, shutting down: <Worker 8515>
+[2020-07-01 12:35:42 -0500] [8515] [INFO] Worker exiting (pid: 8515)
+[2020-07-01 12:35:42 -0500] [8516] [INFO] Worker exiting (pid: 8516)
+[2020-07-01 12:35:42 -0500] [8509] [INFO] Worker exiting (pid: 8509)
+[2020-07-01 12:35:42 -0500] [8514] [INFO] Worker exiting (pid: 8514)
+[2020-07-01 12:35:42 -0500] [8510] [INFO] Parent changed, shutting down: <Worker 8510>
+[2020-07-01 12:35:42 -0500] [8508] [DEBUG] Closing connection. 
+[2020-07-01 12:35:42 -0500] [8511] [INFO] Parent changed, shutting down: <Worker 8511>
+[2020-07-01 12:35:42 -0500] [8508] [INFO] Parent changed, shutting down: <Worker 8508>
+[2020-07-01 12:35:42 -0500] [8510] [INFO] Worker exiting (pid: 8510)
+[2020-07-01 12:35:42 -0500] [8511] [INFO] Worker exiting (pid: 8511)
+[2020-07-01 12:35:42 -0500] [8508] [INFO] Worker exiting (pid: 8508)
+[2020-07-01 12:35:43 -0500] [8513] [INFO] Parent changed, shutting down: <Worker 8513>
+[2020-07-01 12:35:43 -0500] [8512] [DEBUG] Closing connection. 
+[2020-07-01 12:35:43 -0500] [8513] [INFO] Worker exiting (pid: 8513)
+[2020-07-01 12:35:43 -0500] [8512] [INFO] Parent changed, shutting down: <Worker 8512>
+[2020-07-01 12:35:43 -0500] [8512] [INFO] Worker exiting (pid: 8512)

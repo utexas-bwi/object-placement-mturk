@@ -38,6 +38,21 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* resizing of items does not work */
+#items ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#items ul li {
+	list-style: none;
+	display: inline-block;
+	width: 50%;
+}
+/*    */
+
 .card-image {
 	padding-right: 5px;
 }
@@ -118,13 +133,13 @@
 </div>
 <div class="col-lg-8">
 <div class="card-container">
-<div class="card">
+<div id="items" class="card">
 	<ul id="top_shelf_items" class="img_list"><li></li></ul>
 </div>
-<div class="card">
+<div id="items" class="card">
 	<ul id="middle_shelf_items" class="img_list"><li></li></ul>
 </div>
-<div class="card">
+<div id="items" class="card">
 	<ul id="bottom_shelf_items" class="img_list"><li></li></ul>
 </div>
 
