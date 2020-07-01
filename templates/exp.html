@@ -9,7 +9,6 @@
 				connectWith: "#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items"	
 			},{
 			stop : function(event, ui){
-<<<<<<< HEAD
 			  var topshelf = $("#top_shelf_items").sortable("toArray");
 			  console.log(topshelf);
 			  var middleshelf  = $("#middle_shelf_items").sortable("toArray");
@@ -19,18 +18,7 @@
    		/* 	for (var i = 0; i < topshelf.length; i++) {
     		alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
                 }  */
-=======
-			  var itemOrder = $("#top_shelf_items").sortable("toArray");
-			  console.log(itemOrder);
-   			for (var i = 0; i < itemOrder.length; i++) {
-    		alert("Position: " + i + " ID: " + itemOrder[i] + "... item_placed: " + $(ui.item).attr('id'));
-                } 
-				$output = itemOrder;
-				$fp = fopen("data.txt", "a");
-				fwrite ($fp, $output);
-				fclose($fp);
-
->>>>>>> b4155cfcf5c2a32964410800f9d00b503f8f3f8b
+			  
 			}
 		});
 	 	
@@ -243,8 +231,4 @@
 			margin-top: -5px;
 		}	
 	</style>
-<<<<<<< HEAD
-	</html>
-=======
-	
->>>>>>> b4155cfcf5c2a32964410800f9d00b503f8f3f8b
+
