@@ -11,7 +11,7 @@
 			  var itemOrder = $("#top_shelf_items").sortable("toArray");
 			  console.log(itemOrder);
    			for (var i = 0; i < itemOrder.length; i++) {
-    		alert("Position: " + i + " ID: " + itemOrder[i]);
+    		alert("Position: " + i + " ID: " + itemOrder[i] + "... item_placed: " + $(ui.item).attr('id'));
                 } 
 				$output = itemOrder;
 				$fp = fopen("data.txt", "a");
