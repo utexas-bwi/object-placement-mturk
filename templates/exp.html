@@ -1,194 +1,180 @@
 <head>
-<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-
-<script>
-	$(function() {
-		$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
-			connectWith: "#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items"	
+	
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
+				connectWith: "#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items"	
+			},{
+			stop : function(event, ui){
+			  alert($(this).sortable('serialize'));
+			}
 		});
-	});
-
-
-
-</script>
-
-</head>
-
-
-<p>​</p>
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<style type="text/css">body {
-/*background-image: url("https://drive.google.com/uc?id=17V_BRkPML6-Y5vKgTY-TB-cheOM-WMA1");*/
-}
-.card-container {
-	margin-left: auto;
-	margin-right: auto;
-	width: 60vw;
-	background-color: #85482B;
-	padding: 5rem;
-	min-height: 60vh;
-	box-sizing: border-box;
-}
-.card {
-	background-color: #EDAB8A;
-	min-height: 200px;
-	margin-bottom: 5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* resizing of items does not work */
-#items ul {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-#items ul li {
-	list-style: none;
-	display: inline-block;
-	width: 50%;
-}
-/*    */
-
-.card-image {
-	padding-right: 5px;
-}
-.card-content {
-	flex-basis: 150px;
-	font-size:120%;
-}
-.col {
-	width: 510px;
-	height: 220px;	
-}
-.img_list {
-	/* This is only here for debugging visualization, delete later */
-	background-color: lightblue;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	min-height: 220px;
-	width: 100%;
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-.img_list li {
-	float: left;
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-</style>
-
-<p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
-<div class="panel-body" id="instructionBody" onload="declareVars()">
-<div class="row" id="workContent">
-<div class="col-lg-3"><div style="text-align:center; font-size:120%;"><b><script> getName("img3"); </script></b></div>
-<div class="btn-group">
-<div class="row">
-	<div class="col" id="col_1">
-    	<ul id="col_1_items" class="img_list">
-		<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
-    		<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
-    		<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
-	</ul>
+			
+		});
+	
+	
+	
+	</script>
+	
+	</head>
+	
+	
+	<p>​</p>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<style type="text/css">body {
+	/*background-image: url("https://drive.google.com/uc?id=17V_BRkPML6-Y5vKgTY-TB-cheOM-WMA1");*/
+	}
+	.card-container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 60vw;
+		background-color: #85482B;
+		padding: 5rem;
+		min-height: 60vh;
+		box-sizing: border-box;
+	}
+	.card {
+		background-color: #EDAB8A;
+		min-height: 200px;
+		margin-bottom: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.card-image {
+		padding-right: 5px;
+	}
+	.card-content {
+		flex-basis: 150px;
+		font-size:120%;
+	}
+	.col {
+		width: 510px;
+		height: 220px;	
+	}
+	.img_list {
+		/* This is only here for debugging visualization, delete later */
+		background-color: lightblue;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		min-height: 220px;
+		width: 100%;
+		list-style-type: none;
+		padding-left: 0px;
+	}
+	
+	.img_list li {
+		float: left;
+		display: inline-block;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	</style>
+	<script>
+		var itemOrder = $('#top_shelf_items').sortable("toArray");
+			console.log(itemOrder);
+	</script>
+	<p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
+	<div class="panel-body" id="instructionBody">
+	<div class="row" id="workContent">
+	<div class="col-lg-3"><div style="text-align:center; font-size:120%;"><b><script> getName("img3"); </script></b></div>
+	<div class="btn-group">
+	<div class="row">
+		<div class="col" id="col_1">
+			<ul id="col_1_items" class="img_list">
+			<li><img alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="150" height="150" /></li>
+				<li><img alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="150" height="150" /></li>
+				<li><img alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="150" height="150" /></li>
+		</ul>
+		</div>
+		<div class="col" id="col_2">
+			<ul id="col_2_items" class="img_list">
+			<li><img alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" height="150" /></li>
+				<li><img alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" height="150" /></li>
+				<li><img alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" height="150" /></li>
+		</ul>
+		</div>		
+		<div class="col" id="col_3">
+			<ul id="col_3_items" class="img_list">
+			<li><img alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" height="150" /></li>
+				<li><img alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" height="150" /></li>
+				<li><img alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" height="150" /></li>
+		</ul>
+		</div>		
+		<div class="col" id="col_4">
+			<ul id="col_4_items" class="img_list">
+			<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
+				<li><img alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" height="150" /></li>
+				<li><img alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" height="150" /></li>
+		</ul>
+		</div>		
 	</div>
-	<div class="col" id="col_2">
-    	<ul id="col_2_items" class="img_list">
-		<li><img alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="150" height="150" /></li>
-    		<li><img alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="150" height="150" /></li>
-    		<li><img alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="150" height="150" /></li>
-	</ul>
-	</div>		
-	<div class="col" id="col_3">
-    	<ul id="col_3_items" class="img_list">
-		<li><img alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="150" height="150" /></li>
-    		<li><img alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="150" height="150" /></li>
-    		<li><img alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="150" height="150" /></li>
-	</ul>
-	</div>		
-	<div class="col" id="col_4">
-    	<ul id="col_4_items" class="img_list">
-		<li><img alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="150" height="150" /></li>
-    		<li><img alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="150" height="150" /></li>
-    		<li><img alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="150" height="150" /></li>
-	</ul>
-	</div>		
-</div>
-</div>
-<h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
-
-<script>
-    function resize(item) {
-        document.getElementById(item).style.width = 100;
-        document.getElementById(item).style.length = 100;
-    }
-</script>
-<!--<button type="button" onclick="resize()">RESIZE TEST</button>-->
-
-</div>
-<div class="col-lg-8">
-<div class="card-container">
-<div id="items" class="card">
-	<ul id="top_shelf_items" class="img_list"><li></li></ul>
-</div>
-<div id="items" class="card">
-	<ul id="middle_shelf_items" class="img_list"><li></li></ul>
-</div>
-<div id="items" class="card">
-	<ul id="bottom_shelf_items" class="img_list"><li></li></ul>
-</div>
-
-<!--
-<div class="card">
-<div class="card-image"><img alt="img1" class="img-responsive" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url2}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Top" /> Here</label><br />
-<b><script> getName("img1"); </script></b></div>
-</div>
-<div class="card">
-<div class="card-image"><img alt="img3" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url3}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Middle" /> Here </label><br />
-<b><script> getName("img2"); </script></b></div>
-</div>
-<div class="card">
-<div class="card-image"><img alt="img4" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url4}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Bottom" /> Here </label><br />
-<b><script> getName("img4"); </script></b></div>
-</div>
-<!- - <input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /> - -></div>
-</div>
--->
-</div>
-</div>
-
-<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
-<style type="text/css">#collapseTrigger {
-        color: #fff;
-        display: block;
-        text-decoration: none;
-    }
-    #submitButton {
-        white-space: normal;
-    }
-    #instructionBody table {
-        font-size: 14px;
-    }
-    #instructionBody table caption {
-        text-align: left;
-        padding: 0 0 5px 0;
-    }
-    #CategoryInputs {
-        display: block;
-        margin-top: 10px;
-    }
-    .content {
-        margin-bottom: 15px;
-    }
-    .radio:first-of-type {
-        margin-top: -5px;
-    }
-</style>
+	</div>
+	<h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
+	</div>
+	<div class="col-lg-8">
+	<div class="card-container">
+	<div class="card">
+		<ul id="top_shelf_items" class="img_list"><li></li></ul>
+	</div>
+	<div class="card">
+		<ul id="middle_shelf_items" class="img_list"><li></li></ul>
+	</div>
+	<div class="card">
+		<ul id="bottom_shelf_items" class="img_list"><li></li></ul>
+	</div>
+	
+	
+	<!--
+	<div class="card">
+	<div class="card-image"><img alt="img1" class="img-responsive" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url2}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
+	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Top" /> Here</label><br />
+	<b><script> getName("img1"); </script></b></div>
+	</div>
+	<div class="card">
+	<div class="card-image"><img alt="img3" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url3}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
+	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Middle" /> Here </label><br />
+	<b><script> getName("img2"); </script></b></div>
+	</div>
+	<div class="card">
+	<div class="card-image"><img alt="img4" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url4}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
+	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Bottom" /> Here </label><br />
+	<b><script> getName("img4"); </script></b></div>
+	</div>
+	<!- - <input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /> - -></div>
+	</div>
+	-->
+	</div>
+	</div>
+	
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
+	<style type="text/css">#collapseTrigger {
+			color: #fff;
+			display: block;
+			text-decoration: none;
+		}
+		#submitButton {
+			white-space: normal;
+		}
+		#instructionBody table {
+			font-size: 14px;
+		}
+			#instructionBody table caption {
+				text-align: left;
+				padding: 0 0 5px 0;
+			}
+		#CategoryInputs {
+			display: block;
+			margin-top: 10px;
+		}
+		.content {
+			margin-bottom: 15px;
+		}
+		.radio:first-of-type {
+			margin-top: -5px;
+		}	
+	</style>
+	
