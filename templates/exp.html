@@ -15,7 +15,8 @@
 					} else {
 						$(ui.item).appendTo(this);					
 					}				
-				}	
+				},
+				placeholder: "placeholder"
 			},
 			{
 			stop : function(event, ui){
@@ -96,6 +97,11 @@
   display: flex;
 }
 
+.placeholder {
+	width: 0px;
+	height: 0px;
+}
+
 .nowrap  { 
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -130,8 +136,7 @@
 	.img_list li {
 		float: left;
 		display: inline-block;
-		padding-right: 10px;
-		padding-left: 10px;
+		margin-top: 20px;
 		flex-wrap: nowrap;
 	}
 	
@@ -182,13 +187,13 @@
 	<div class="col-lg-8">
 	<div class="card-container">
 	<div class="card">
-		<ul id="top_shelf_items" class="img_list"><li></li></ul>
+		<ul id="top_shelf_items" class="img_list"></ul>
 	</div>
 	<div class="card">
-		<ul id="middle_shelf_items" class="img_list"><li></li></ul>
+		<ul id="middle_shelf_items" class="img_list"></ul>
 	</div>
 	<div class="card">
-		<ul id="bottom_shelf_items" class="img_list"><li></li></ul>
+		<ul id="bottom_shelf_items" class="img_list"></ul>
 	</div>
 	
 	
