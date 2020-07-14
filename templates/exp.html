@@ -1,8 +1,56 @@
 <html>
 <head>
-	
 	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+	<script src="/static/lib/underscore-min.js" type="text/javascript"> </script>
+	<script src="/static/lib/backbone-min.js" type="text/javascript"> </script>
+	
+	<script src="/static/js/utils.js" type="text/javascript"> </script>
+	<script src="/static/js/psiturk.js" type="text/javascript"> </script>
+
+	<script type="text/javascript">
+		// These fields provided by the psiTurk Server
+		var uniqueId = "{{ uniqueId }}";  // a unique string identifying the worker/task
+		var condition = "{{ condition }}"; // the condition number
+		var counterbalance = "{{ counterbalance }}"; // a number indexing counterbalancing conditions
+		var adServerLoc = "{{ adServerLoc }}"; // the location of your ad (so you can send user back at end of experiment)
+		var mode = "{{ mode }}"; // the location of your ad (so you can send user back at end of experiment)
+	</script>
+	
+	
+	
+	<script>
+	var psiTurk = new PsiTurk(uniqueId, adServerLoc, mode);
+	</script>
+	
+	<script>
+		prompt_resubmit = function() {
+			replaceBody(error_message);
+			$("#resubmit").click(resubmit);
+		};
+		resubmit = function() {
+			replaceBody("<h1>Trying to resubmit...</h1>");
+			reprompt = setTimeout(prompt_resubmit, 10000);
+			
+			psiTurk.saveData({
+				success: function() {
+					clearInterval(reprompt); 
+				}, 
+				error: prompt_resubmit}
+			);
+		};
+		function submit() {
+			psiTurk.saveData({
+            success: function(){ psiTurk.completeHIT(); }, 
+            error: prompt_resubmit
+        });
+		  }
+	</script>
+
+
+
+
 	<script>
 		$(function() {
 			$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
@@ -26,6 +74,7 @@
 			  var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
 			  console.log(middleshelf);
 			  console.log(bottomshelf);
+			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf])
    		/* 	  for (var i = 0; i < topshelf.length; i++) {
     			  alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
                           }  */
@@ -198,6 +247,9 @@
 	<div class="card">
 		<ul id="bottom_shelf_items" class="img_list"></ul>
 	</div>
+	<button type="button" class="btn btn-primary btn-lg" onClick="submit();">
+		Submit
+	  </button>
 	
 	
 	<!--
