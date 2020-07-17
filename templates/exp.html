@@ -74,7 +74,11 @@
 			  var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
 			  console.log(middleshelf);
 			  console.log(bottomshelf);
-			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf])
+			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf]);
+			
+			  if(topshelf.length + middleshelf.length + bottomshelf.length == 12) {
+			  	document.getElementById("submit_button").disabled = false;
+			  } 
    		/* 	  for (var i = 0; i < topshelf.length; i++) {
     			  alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
                           }  */
@@ -247,7 +251,7 @@
 	<div class="card">
 		<ul id="bottom_shelf_items" class="img_list"></ul>
 	</div>
-	<button type="button" class="btn btn-primary btn-lg" onClick="submit();">
+	<button id="submit_button" type="button" class="btn btn-primary btn-lg" onClick="submit()" disabled>
 		Submit
 	  </button>
 	
