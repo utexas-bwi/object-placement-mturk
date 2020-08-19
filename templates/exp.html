@@ -8,7 +8,7 @@
 	
 	<script src="/static/js/utils.js" type="text/javascript"> </script>
 	<script src="/static/js/psiturk.js" type="text/javascript"> </script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		// These fields provided by the psiTurk Server
 		var uniqueId = "{{ uniqueId }}";  // a unique string identifying the worker/task
@@ -20,9 +20,6 @@
 	
 	
 	
-	<script>
-	var psiTurk = new PsiTurk(uniqueId, adServerLoc, mode);
-	</script>
 	
 	<script>
 		prompt_resubmit = function() {
@@ -46,50 +43,6 @@
             error: prompt_resubmit
         });
 		  }
-	</script>
-
-
-
-
-	<script>
-		$(function() {
-			$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
-				connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items,#middle_shelf_items,#bottom_shelf_items",
-				receive: function(event, ui) {
-					console.log(this.parentElement.className);
-					console.log(ui.sender[0].parentElement.className);
-					if(this.parentElement.className == "col" || ui.sender[0].parentElement.className == "card") {
-						$(ui.sender).sortable('cancel');
-					} else {
-						$(ui.item).appendTo(this);					
-					}				
-				},
-				placeholder: "placeholder"
-			},
-			{
-			stop : function(event, ui){
-			  var topshelf = $("#top_shelf_items").sortable("toArray");
-			  console.log(topshelf);
-			  var middleshelf  = $("#middle_shelf_items").sortable("toArray");
-			  var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
-			  console.log(middleshelf);
-			  console.log(bottomshelf);
-			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf]);
-			
-			  if(topshelf.length + middleshelf.length + bottomshelf.length == 12) {
-			  	document.getElementById("submit_button").disabled = false;
-			  } 
-   		/* 	  for (var i = 0; i < topshelf.length; i++) {
-    			  alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
-                          }  */
-			  
-			}
-			});
-	 	
-		});
-	
-	
-	
 	</script>
 	
 	</head>
@@ -210,11 +163,13 @@
 	<div class="row">
 		<div class="col" id="col_1">
 			<ul id="col_1_items" class="img_list">
-			<li id = "Jelly"><img class="object-fit_scale-down" alt="Jelly" src="{{ server_location }}/static/images/Jelly.jpg" width="100%" height="95%" /></li>
-				<li id = "Potato Chips"><img class="object-fit_scale-down"alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="100%" height="95%" /></li>
+		<!--	<li id = "Potato Chips"><img class="object-fit_scale-down" alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="100%" height="95%" /></li>
+			<li id = "Potato Chips"><img class="object-fit_scale-down"alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="100%" height="95%" /></li>
 				<li id = "Orange Juice"><img class="object-fit_scale-down" alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="100%" height="95%" /></li>
-		</ul>
+			-->
+			</ul>
 		</div>
+<!--
 		<div class="col" id="col_2">
 			<ul id="col_2_items" class="img_list">
 			<li id = "Orange"><img class="object-fit_scale-down" alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="100%" height="95%" /></li>
@@ -235,7 +190,8 @@
 				<li id = "Bread"><img class="object-fit_scale-down" alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="100%" height="95%" /></li>
 				<li id ="Apple"><img class="object-fit_scale-down" alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="100%" height="95%" /></li>
 		</ul>
-		</div>		
+		</div>
+-->		
 	</div>
 	</div>
 	<h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
@@ -243,13 +199,19 @@
 	<div class="col-lg-8">
 	<div class="card-container">
 	<div class="card">
-		<ul id="top_shelf_items" class="img_list"></ul>
+		<ul id="top_shelf_items" class="img_list">
+			<!-- <li id = "Orange"><img class="object-fit_scale-down" alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="100%" height="95%" /></li> -->
+		</ul>
 	</div>
 	<div class="card">
-		<ul id="middle_shelf_items" class="img_list"></ul>
+		<ul id="middle_shelf_items" class="img_list">
+			<!-- <li id = "Onion"><img class="object-fit_scale-down" alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="100%" height="95%" /></li> -->
+		</ul>
 	</div>
 	<div class="card">
-		<ul id="bottom_shelf_items" class="img_list"></ul>
+		<ul id="bottom_shelf_items" class="img_list">
+			<!-- <li id = "Grape Juice"><img class="object-fit_scale-down" alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="100%" height="95%" /></li> -->
+		</ul>
 	</div>
 	<button id="submit_button" type="button" class="btn btn-primary btn-lg" onClick="submit()" disabled>
 		Submit
@@ -277,6 +239,112 @@
 	-->
 	</div>
 	</div>
+
+	<script>
+	var psiTurk = new PsiTurk(uniqueId, adServerLoc, mode);
+	var total_shelf_data = new Array();
+	var shelf_data = new Array();
+		$.ajax({
+			type: "GET",
+			url: "{{ server_location }}/static/human_choice_data_mode2.csv",
+			dataType: "text",
+			async: false,
+			success: function(response)
+			{
+				total_shelf_data = $.csv.toArrays(response);
+				console.log(total_shelf_data);
+				shelf_data = total_shelf_data.slice(condition * 4, condition * 4 + 4);
+				console.log(shelf_data);
+			}
+		});
+
+	console.log(shelf_data)
+//	var food_item = document.createElement("li")
+//	var food_image = document.createElement("img")	
+//	food_image.src = "{{ server_location }}/static/images/Potato Chips.jpg"
+//	food_item.id = "Potato Chips"
+//	food_image.alt = "Potato Chips"
+//	food_image.width = "100px"
+//	food_image.height = "95px"
+//	food_image.class = "object-fit_scale-down"
+	
+
+//	food_item.append(food_image)
+//	$("#top_shelf_items").appendChild(food_item)
+
+
+	var item_string = '<li id = "' + shelf_data[0] + '"><img class="object-fit_scale-down" alt="' + shelf_data[0] + '" src="{{ server_location }}/static/images/' + shelf_data[0] + '.jpg" width="100%" height="95%" /></li>'
+	
+	$("#col_1_items").append(item_string)
+
+	for(i = 1; i < 4; i++) {
+		for(j = 0; j < shelf_data[i].length; j++) {
+			console.log(shelf_data[i][j])
+			console.log("HERE") 
+			item_string = '<li id = "' + shelf_data[i][j] + '"><img class="object-fit_scale-down" alt="' + shelf_data[i][j] + '" src="{{ server_location }}/static/images/' + shelf_data[i][j] + '.jpg" width="100%" height="95%" /></li>'
+
+			if(i == 1) {
+				$("#top_shelf_items").append(item_string)
+			} else if (i == 2) {
+				$("#middle_shelf_items").append(item_string)
+			} else {
+				$("#bottom_shelf_items").append(item_string)
+			}
+	
+		}
+
+	}
+
+
+	</script>
+
+
+	<script>
+		$(function() {
+			$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
+				connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items,#middle_shelf_items,#bottom_shelf_items",
+				receive: function(event, ui) {
+					console.log(this.parentElement.className);
+					console.log(ui.sender[0].parentElement.className);
+					if(this.parentElement.className == "col" || ui.sender[0].parentElement.className == "card") {
+						$(ui.sender).sortable('cancel');
+					} else {
+						$(ui.item).appendTo(this);
+						console.log($(ui.item));					
+					}				
+				},
+				placeholder: "placeholder"
+			},
+			{
+			stop : function(event, ui){
+			  var topshelf = $("#top_shelf_items").sortable("toArray");
+			  console.log(topshelf);
+			  var middleshelf  = $("#middle_shelf_items").sortable("toArray");
+			  var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
+			  console.log(middleshelf);
+			  console.log(bottomshelf);
+			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf]);
+			
+			  var first_col = $("#col_1_items").sortable("toArray");
+
+			  if(first_col.length == 0) {			  
+			  	document.getElementById("submit_button").disabled = false;
+			  }
+
+   		/* 	  for (var i = 0; i < topshelf.length; i++) {
+    			  alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
+                          }  */
+			  
+			}
+			});
+	 	
+		});
+	
+	
+	
+	</script>
+
+
 	
 	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
 	<style type="text/css">#collapseTrigger {
