@@ -228,8 +228,8 @@
 			$("#col_1_items,#col_2_items,#col_3_items,#col_4_items,#top_shelf_items,#middle_shelf_items,#bottom_shelf_items").sortable({
 				connectWith: "#col_1_items, #col_2_items, #col_3_items, #col_4_items, #top_shelf_items,#middle_shelf_items,#bottom_shelf_items",
 				receive: function(event, ui) {
-					console.log(this.parentElement.className);
-					console.log(ui.sender[0].parentElement.className);
+					//console.log(this.parentElement.className);
+					//console.log(ui.sender[0].parentElement.className);
 					if(this.parentElement.className == "col" || ui.sender[0].parentElement.className == "card") {
 						$(ui.sender).sortable('cancel');
 					} else {
@@ -237,10 +237,17 @@
 						console.log($(ui.item));					
 					}				
 				},
+				beforeStop: function(event, ui) {
+					//console.log(this.parentElement.className)
+					if(this.parentElement.className == "card") {
+						$(this).sortable('cancel');
+					}
+				},
 				placeholder: "placeholder"
 			},
 			{
 				stop : function(event, ui){
+
 			  		var topshelf = $("#top_shelf_items").sortable("toArray");
 			  		console.log(topshelf);
 			  		var middleshelf  = $("#middle_shelf_items").sortable("toArray");
