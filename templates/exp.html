@@ -39,10 +39,10 @@
 		};
 		function submit() {
 			psiTurk.saveData({
-            success: function(){ psiTurk.completeHIT(); }, 
-            error: prompt_resubmit
-        });
-		  }
+            			success: function(){ psiTurk.completeHIT(); }, 
+            			error: prompt_resubmit
+        		});
+		}
 	</script>
 	
 	</head>
@@ -151,10 +151,6 @@
 	
 	</style>
 	
-	<!-- <script>
-		var topshelf = $('#top_shelf_items').sortable("toArray");
-			console.log(topshelf);
-	</script> -->
 	<p><input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /></p>
 	<div class="panel-body" id="instructionBody">
 	<div class="row" id="workContent">
@@ -162,81 +158,30 @@
 	<div class="btn-group">
 	<div class="row">
 		<div class="col" id="col_1">
-			<ul id="col_1_items" class="img_list">
-		<!--	<li id = "Potato Chips"><img class="object-fit_scale-down" alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="100%" height="95%" /></li>
-			<li id = "Potato Chips"><img class="object-fit_scale-down"alt="Potato Chips" src="{{ server_location }}/static/images/Potato Chips.jpg" width="100%" height="95%" /></li>
-				<li id = "Orange Juice"><img class="object-fit_scale-down" alt="Orange Juice" src="{{ server_location }}/static/images/Orange Juice.jpg" width="100%" height="95%" /></li>
-			-->
-			</ul>
+			<ul id="col_1_items" class="img_list"></ul>
 		</div>
-<!--
-		<div class="col" id="col_2">
-			<ul id="col_2_items" class="img_list">
-			<li id = "Orange"><img class="object-fit_scale-down" alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="100%" height="95%" /></li>
-				<li id = "Onion"><img class="object-fit_scale-down" alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="100%" height="95%" /></li>
-				<li id = "Grape Juice"><img class="object-fit_scale-down" alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="100%" height="95%" /></li>
-		</ul>
-		</div>		
-		<div class="col" id="col_3">
-			<ul id="col_3_items" class="img_list">
-			<li id = "Crackers"><img class="object-fit_scale-down" alt="Crackers" src="{{ server_location }}/static/images/Crackers.jpg" width="100%" height="95%" /></li>
-				<li id = "Corn"><img class="object-fit_scale-down" alt="Corn" src="{{ server_location }}/static/images/Corn.jpg" width="100%" height="95%" /></li>
-				<li id = "Coke"><img class="object-fit_scale-down" alt="Coke" src="{{ server_location }}/static/images/Coke.jpg" width="100%" height="95%" /></li>
-		</ul>
-		</div>		
-		<div class="col" id="col_4">
-			<ul id="col_4_items" class="img_list">
-			<li id = "Cereal"><img class="object-fit_scale-down" alt="Cereal" src="{{ server_location }}/static/images/Cereal.jpg" width="100%" height="95%" /></li>
-				<li id = "Bread"><img class="object-fit_scale-down" alt="Bread" src="{{ server_location }}/static/images/Bread.jpg" width="100%" height="95%" /></li>
-				<li id ="Apple"><img class="object-fit_scale-down" alt="Apple" src="{{ server_location }}/static/images/Apple.jpg" width="100%" height="95%" /></li>
-		</ul>
-		</div>
--->		
 	</div>
 	</div>
-	<h3 class="form-group"><!-- Question for the Worker --><label class="group-label">How would you order these objects on the cupboard?</label> <!-- Input from the Worker --></h3>
+	<h3 class="form-group"><!-- Question for the Worker --><label class="group-label">Where would you put this object on the cupboard?</label> <!-- Input from the Worker --></h3>
 	</div>
 	<div class="col-lg-8">
 	<div class="card-container">
 	<div class="card">
 		<ul id="top_shelf_items" class="img_list">
-			<!-- <li id = "Orange"><img class="object-fit_scale-down" alt="Orange" src="{{ server_location }}/static/images/Orange.jpg" width="100%" height="95%" /></li> -->
 		</ul>
 	</div>
 	<div class="card">
 		<ul id="middle_shelf_items" class="img_list">
-			<!-- <li id = "Onion"><img class="object-fit_scale-down" alt="Onion" src="{{ server_location }}/static/images/Onion.jpg" width="100%" height="95%" /></li> -->
 		</ul>
 	</div>
 	<div class="card">
 		<ul id="bottom_shelf_items" class="img_list">
-			<!-- <li id = "Grape Juice"><img class="object-fit_scale-down" alt="Grape Juice" src="{{ server_location }}/static/images/Grape Juice.jpg" width="100%" height="95%" /></li> -->
 		</ul>
 	</div>
 	<button id="submit_button" type="button" class="btn btn-primary btn-lg" onClick="submit()" disabled>
 		Submit
-	  </button>
+	</button>
 	
-	
-	<!--
-	<div class="card">
-	<div class="card-image"><img alt="img1" class="img-responsive" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url2}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Top" /> Here</label><br />
-	<b><script> getName("img1"); </script></b></div>
-	</div>
-	<div class="card">
-	<div class="card-image"><img alt="img3" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url3}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Middle" /> Here </label><br />
-	<b><script> getName("img2"); </script></b></div>
-	</div>
-	<div class="card">
-	<div class="card-image"><img alt="img4" class="img-responsive center-block" src="https://s3.amazonaws.com/object-images-utaustin/Objects/${image_url4}" style="width: 200px; height: 200px; border-width: 5px; border-style: solid;" /></div>
-	<div class="card-content"><label class="btn btn-default"><input id="category1" name="categories" onclick="clickSubmit()" required="" type="radio" value="Bottom" /> Here </label><br />
-	<b><script> getName("img4"); </script></b></div>
-	</div>
-	<!- - <input id="img1" type="hidden" value="${image_url}" /> <input id="img2" type="hidden" value="${image_url2}" /> <input id="img3" type="hidden" value="${image_url3}" /> <input id="img4" type="hidden" value="${image_url4}" /> - -></div>
-	</div>
-	-->
 	</div>
 	</div>
 
@@ -258,29 +203,12 @@
 			}
 		});
 
-	console.log(shelf_data)
-//	var food_item = document.createElement("li")
-//	var food_image = document.createElement("img")	
-//	food_image.src = "{{ server_location }}/static/images/Potato Chips.jpg"
-//	food_item.id = "Potato Chips"
-//	food_image.alt = "Potato Chips"
-//	food_image.width = "100px"
-//	food_image.height = "95px"
-//	food_image.class = "object-fit_scale-down"
-	
-
-//	food_item.append(food_image)
-//	$("#top_shelf_items").appendChild(food_item)
-
-
 	var item_string = '<li id = "' + shelf_data[0] + '"><img class="object-fit_scale-down" alt="' + shelf_data[0] + '" src="{{ server_location }}/static/images/' + shelf_data[0] + '.jpg" width="100%" height="95%" /></li>'
 	
 	$("#col_1_items").append(item_string)
 
 	for(i = 1; i < 4; i++) {
-		for(j = 0; j < shelf_data[i].length; j++) {
-			console.log(shelf_data[i][j])
-			console.log("HERE") 
+		for(j = 0; j < shelf_data[i].length; j++) { 
 			item_string = '<li id = "' + shelf_data[i][j] + '"><img class="object-fit_scale-down" alt="' + shelf_data[i][j] + '" src="{{ server_location }}/static/images/' + shelf_data[i][j] + '.jpg" width="100%" height="95%" /></li>'
 
 			if(i == 1) {
@@ -290,14 +218,10 @@
 			} else {
 				$("#bottom_shelf_items").append(item_string)
 			}
-	
 		}
-
 	}
 
-
 	</script>
-
 
 	<script>
 		$(function() {
@@ -316,34 +240,27 @@
 				placeholder: "placeholder"
 			},
 			{
-			stop : function(event, ui){
-			  var topshelf = $("#top_shelf_items").sortable("toArray");
-			  console.log(topshelf);
-			  var middleshelf  = $("#middle_shelf_items").sortable("toArray");
-			  var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
-			  console.log(middleshelf);
-			  console.log(bottomshelf);
-			  psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf]);
+				stop : function(event, ui){
+			  		var topshelf = $("#top_shelf_items").sortable("toArray");
+			  		console.log(topshelf);
+			  		var middleshelf  = $("#middle_shelf_items").sortable("toArray");
+			  		var bottomshelf =  $("#bottom_shelf_items").sortable("toArray");
+			  		console.log(middleshelf);
+			  		console.log(bottomshelf);
+			  		psiTurk.recordTrialData([topshelf, middleshelf, bottomshelf]);
 			
-			  var first_col = $("#col_1_items").sortable("toArray");
+			  		var first_col = $("#col_1_items").sortable("toArray");
 
-			  if(first_col.length == 0) {			  
-			  	document.getElementById("submit_button").disabled = false;
-			  }
-
-   		/* 	  for (var i = 0; i < topshelf.length; i++) {
-    			  alert("Position: " + i + " ID: " + topshelf[i] + "Item added: " + $(ui.item).attr('id'));
-                          }  */
+			  		if(first_col.length == 0) {			  
+			  			document.getElementById("submit_button").disabled = false;
+			  		}
 			  
-			}
+				}
 			});
 	 	
 		});
 	
-	
-	
 	</script>
-
 
 	
 	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
